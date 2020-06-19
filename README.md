@@ -1,14 +1,9 @@
-# Creative Theme for Jekyll
+# Welcome to Store Cat
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+We make it easy to run an online business, by providing you with all the information you need, at your fingertips.
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+## Contributing
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+We don't have a teams page yet, so if you're applying, please leave a PR building one and you'll be paid 0.5ETH.
 
-## To use the Creative Theme template in your project
-
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
-
+Alternatively, if you find a better graphic or word choice for our home page, and leave send us an email at al@atlastechnologies.xyz, we will consider you for the marketing team.

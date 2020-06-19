@@ -73,7 +73,16 @@ header {
         opacity: 1;
         font-family: nunito;
 }
-
+section#easy-onboarding {
+        overflow: hidden;
+}
+.call-to-action span {
+        display: block;
+        margin-bottom: 1em;
+}
+.onboarding span {
+        font-size: 1.25em;
+}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
