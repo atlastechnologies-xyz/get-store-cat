@@ -83,6 +83,13 @@ section#easy-onboarding {
 .onboarding span {
         font-size: 1.25em;
 }
+.onboarding img {
+        max-width: 100%;
+        margin-top: -5em;
+}
+.header strong {
+        color: #f05f40;
+}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
