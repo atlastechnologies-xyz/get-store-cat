@@ -47,49 +47,46 @@ body {
         font-family: "nunito";
 }
 
-/* Tmp alex tweaks for storecat logo */
-a.navbar-brand.page-scroll {
-        margin-top: -0.5em;
-        font-size: 1.85em;
-        color: white !important;
-        opacity: 1;
-        font-family: nunito !important;
-        font-weight: 900 !important;
+header {
+        background-image: url(/img/warehouse.jpg);
+        background-size: cover;
+        min-width: 100vw;
 }
 .navbar-brand > img {
         display: inline-block;
-        max-height: 2.25em;
-        margin-left: -0.45em;
-        margin-top: -0.32em;
+        max-height: calc(100% + 0.85em);
+        margin-left: 1em;
+        margin-top: -0.25em;
+        margin-right: 0.25em;
+        opacity: 0.85;
 }
-header {
-        background-image: none;
-        background: blue;
-}    
-
-.header-content-inner p {
-        font-weight: 1000 !important;
-        color: white !important;
-        opacity: 1;
+a.navbar-brand.page-scroll {
+        text-transform: capitalize !important;
+}
+.header-content-inner {
+        background: #ffffff70;
+        border-radius: 1em;
+        padding: 1em;
+}
+.header-content p {
+        color: blue !important;
+}
+.header h1 {
         font-family: nunito;
+        color: blue;
+        text-transform: capitalize !important;
+        font-size: 2.25em !important;
 }
-section#easy-onboarding {
-        overflow: hidden;
+
+/* Carousel */
+
+.packageDetails{
+        display: none;
 }
-.call-to-action span {
+.packageDetails.shown {
         display: block;
-        margin-bottom: 1em;
 }
-.onboarding span {
-        font-size: 1.25em;
-}
-.onboarding img {
-        max-width: 100%;
-        margin-top: -5em;
-}
-.header strong {
-        color: #f05f40;
-}
+
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
