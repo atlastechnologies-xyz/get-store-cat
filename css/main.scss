@@ -78,13 +78,60 @@ a.navbar-brand.page-scroll {
         font-size: 2.25em !important;
 }
 
-/* Carousel */
+/* Carousel header */
+.container.onboarding {
+        background: #add8e67d;
+        border-radius: 1em;
+        padding: 2em;
+}
+.onboarding h2 {
+        width: fit-content;
+        margin: auto;
+}
 
+.onboarding span.headerMessage {
+        width: 100% !important;
+        text-align: center !important;
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+}
+
+.onboarding ul {
+        padding: 0;
+        width: fit-content;
+        margin: auto;
+}
+
+.onboarding li {
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+}
+li.featureNav.selected {
+    border-bottom: 1px blue solid;
+}
+
+/* Carousel */
 .packageDetails{
         display: none;
+        padding-top: 2em;
+        padding-bottom: 1em;
 }
+
 .packageDetails.shown {
         display: block;
+}
+.onboarding img {
+        float: right;
+}
+.onboarding .col-sm-9 {
+        padding-right: 10%;
+}
+span.pricing {
+        display: block;
+        padding-top: 1em;
+        font-weight: 700;
 }
 
 
