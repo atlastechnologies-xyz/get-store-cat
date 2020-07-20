@@ -34,23 +34,28 @@
 // }
 
 // variables.less
-$theme-primary: #F05F40;
-$theme-dark: #222;
+$theme-primary: #CAECD2;
+$theme-secondary: #6AC1D8;
+$theme-dark: #0F4C5C;
+$theme-primary-light: #caecd2bd;
+// $theme-dark: #222;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "mixins",
-        "base"
-;
+@import "mixins";
+@import "base";
 
 body {
         font-family: "nunito";
+        color: $theme-dark;
 }
 
 header {
         background-image: url(/img/warehouse.jpg);
         background-size: cover;
         min-width: 100vw;
+}
+.header-content-inner {
+        width: fit-content;
 }
 .navbar-brand > img {
         display: inline-block;
@@ -60,28 +65,69 @@ header {
         margin-right: 0.25em;
         opacity: 0.85;
 }
-a.navbar-brand.page-scroll {
+a.btn {
+        background: $theme-dark;
+        padding-top: 0.5em;
+        padding-bottom: 0.3em;
+        border-radius: 0.75em;
+        font-weight: 700;
         text-transform: capitalize !important;
+        color: white !important;        
+}
+a.btn:hover {
+        background: $theme-dark;
+        text-decoration: underline;
+        color: white !important;
+}
+.text-center p, .text-center h2 {
+        color: $theme-dark;
 }
 .header-content-inner {
-        background: #ffffff70;
+        background: $theme-primary;
         border-radius: 1em;
         padding: 1em;
 }
 .header-content p {
-        color: blue !important;
+        color: $theme-dark !important;
+        margin-bottom: 1em !important;
+        margin-top: 1em;
 }
 .header h1 {
         font-family: nunito;
-        color: blue;
+        color: $theme-dark;
         text-transform: capitalize !important;
         font-size: 2.25em !important;
 }
 
+/* Call to action */
+.bg-primary {
+        background-color: $theme-secondary;
+}
+.bg-primary a.btn:hover {
+        background: $theme-dark;
+        text-decoration: underline;
+}
+
+/* Services */
+.service-box img {
+        max-height: 7em;
+}
+.service-box h3 {
+        line-height: 1.25em;
+        font-weight: 550;
+        font-size: 1.5em;
+}
+.service-box {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+}
+
+
 /* Carousel header */
 .container.onboarding {
-        background: #add8e67d;
+        background: $theme-primary;
         border-radius: 1em;
+        color: $theme-dark;
         padding: 2em;
 }
 .onboarding h2 {
@@ -109,7 +155,7 @@ a.navbar-brand.page-scroll {
         padding-right: 1em;
 }
 li.featureNav.selected {
-    border-bottom: 1px blue solid;
+    border-bottom: 1px $theme-dark solid;
 }
 
 /* Carousel */
@@ -134,6 +180,10 @@ span.pricing {
         font-weight: 700;
 }
 
+section {
+        width: 100vw !important;
+        min-width: 100vw !important;
+}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
@@ -144,21 +194,43 @@ span.pricing {
 @media screen and (max-width: 800px ) {
 	
         .navbar-header {
-                background: #3b7dfa;
+                background: $theme-dark;
+        }
+        a.navbar-brand.page-scroll {
+                color: white !important;
         }
         header {
                 height: calc( 100vh - 5em);
                 display: block;
         }
-        strong {
-                font-size: 1.3em;
-        }
         .header-content-inner {
+                width: 80vw;
+                margin: auto;
                 margin-top: 6vh;
         }
-        .header-content-inner h1 {
-                font-size: 8em !important;
+        .header h1 {
+                font-size: 2.75em !important;
         }
+        .header-content-inner p {
+                font-size: 1.75em !important;
+        }
+        .onboarding ul {
+                display: none;
+        }
+        .packageDetails {
+                display: block;
+                border-top: 0.5px solid $theme-secondary;
+                padding-bottom: 2em !important;
+        }
+        .onboarding .col-sm-3 {
+                text-align: center;
+        }
+        .onboarding img {
+                float: unset;
+                max-width: 50%;
+        }
+
+
 } 
 
 /* Mobile */

@@ -75,13 +75,13 @@ aside {
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $theme-secondary;
         @include sans-serif-font;
         font-weight: 700;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-dark, 10%);
         }
     }
     .nav {
@@ -91,15 +91,15 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: $theme-secondary;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-dark;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $theme-dark !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -129,18 +129,18 @@ aside {
             background-color: white;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: $theme-dark;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($theme-dark, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $theme-secondary;
                 &:hover {
-                    color: $theme-primary;
+                    color: $theme-dark;
                 }
             }
         }
