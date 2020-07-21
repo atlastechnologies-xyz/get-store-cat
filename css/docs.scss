@@ -1,0 +1,20 @@
+---
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables";
+@import "mixins";
+@import "base";
+
+
+header {
+    height: 30vh;
+    min-height: fit-content !important;
+}
+
+.container.row {
+    margin: auto;
+}
+a {
+    color: $theme-secondary;
+}

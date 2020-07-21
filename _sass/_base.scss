@@ -6,6 +6,7 @@ body {
 
 body {
     @include serif-font;
+    overflow-x: hidden;
 }
 
 hr {
@@ -349,3 +350,26 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+footer {
+    background: $theme-dark;
+}
+footer ul {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: fit-content;
+    margin: auto;
+    padding-left: 0;
+}
+footer li {
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+footer span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+}

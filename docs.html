@@ -1,0 +1,15 @@
+---
+title: Documentation
+layout: front
+stylesheet: docs.css
+permalink: /docs/
+---
+
+{% include docsHeader.html %}
+{% for doc in site.docs %}
+    {% include docPreview.html
+        title=doc.title
+        text=doc.previewText
+        link=doc.permalink
+    %}
+{% endfor %}
