@@ -3,13 +3,18 @@ title: Documentation
 layout: front
 stylesheet: docs.css
 permalink: /docs/
+previewText: Contact us at support@getstorecat.com if you have any questions!
 ---
 
 {% include docsHeader.html %}
-{% for doc in site.docs %}
+<div class="container row docsList">
+    {% for doc in site.docs %}
     {% include docPreview.html
         title=doc.title
         text=doc.previewText
         link=doc.permalink
     %}
-{% endfor %}
+    {% endfor %}
+</div>
+
+{% include footer.html %}

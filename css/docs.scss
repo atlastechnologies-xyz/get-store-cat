@@ -37,3 +37,6 @@ span.startNowButton {
     text-transform: uppercase;
     color: $theme-dark;
 }
+.docsList.container.row {
+    min-height: 80vh;
+}
