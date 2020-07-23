@@ -1,9 +1,9 @@
 <section id="components"> 
     <div class="container onboarding">
-        <div class="componentNav" onclick="navComponents('left')">
+        <div class="componentNav" onclick="navComponentsLeft()">
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
         </div>
-        <div class="componentNav right" onclick="navComponents('right')">
+        <div class="componentNav right" onclick="navComponentsRight()">
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>   
         <div class="row">
@@ -77,7 +77,33 @@
 
 <script>
 
+    autoScrollComponents()
+
+    function autoScrollComponents () {
+
+        setInterval( function () {
+            if ( !window.stopAutoScrolling ) {
+                navComponents('right')
+            }
+        }, 2000)
+
+    }
+
+    function navComponentsRight ( ) {
+        if ( !window.stopAutoScrolling ) {
+            window.stopAutoScrolling = true;
+        }
+        navComponents('right')
+    }
+    function navComponentsLeft ( ) {
+        if ( !window.stopAutoScrolling ) {
+            window.stopAutoScrolling = true;
+        }
+        navComponents('left')
+    }    
+
     function navComponents (direction) {
+        
         console.log('going', direction)
         var components = document.getElementsByClassName('packageDetails')
         var currentComponent = document.getElementsByClassName('shown')[0]
