@@ -43,6 +43,10 @@ body {
         font-family: "nunito";
         color: $theme-dark;
 }
+h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+}
 
 header {
         background-image: url(/img/warehouse.jpg);
@@ -124,10 +128,18 @@ a.btn:hover {
         border-radius: 1em;
         color: $theme-dark;
         padding: 2em;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        position: relative;
 }
 .onboarding h2 {
         width: fit-content;
         margin: auto;
+}
+.onboarding h3 {
+        margin-top: 0em;
+        font-size: 1.85em;
+        font-weight: 600;
 }
 
 .onboarding span.headerMessage {
@@ -137,11 +149,16 @@ a.btn:hover {
         margin-top: 0.5em;
         margin-bottom: 1.5em;
 }
+.onboarding span {
+        font-size: 1.15em;
+}
 
 .onboarding ul {
         padding: 0;
         width: fit-content;
         margin: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
 }
 
 .onboarding li {
@@ -152,12 +169,33 @@ a.btn:hover {
 li.featureNav.selected {
     border-bottom: 1px $theme-dark solid;
 }
-
+section#components {
+        background: url(/img/shipyard.jpg);
+        background-size: contain;
+}
+.componentNav {
+        color: $theme-dark;
+        height: 100px;
+        position: absolute;
+        left: 2em;
+        z-index: 10000;
+        width: 100px;
+        top: calc(50% - 50px)
+}
+.componentNav.right {
+        left: unset;
+        right: 2em;
+        text-align: right;
+}
+.componentNav i {
+        font-size: 5em;
+}
 /* Carousel */
 .packageDetails{
         display: none;
         padding-top: 2em;
         padding-bottom: 1em;
+        min-height: 18em;
 }
 
 .packageDetails.shown {
@@ -209,6 +247,9 @@ section {
         .header-content-inner p {
                 font-size: 1.75em !important;
         }
+        section#components {
+                background: none;
+        }
         .onboarding ul {
                 display: none;
         }
@@ -223,6 +264,9 @@ section {
         .onboarding img {
                 float: unset;
                 max-width: 50%;
+        }
+        .componentNav {
+                display: none;
         }
 
 
