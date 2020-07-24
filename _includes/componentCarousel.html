@@ -1,0 +1,147 @@
+<section id="components"> 
+    <div class="container onboarding" onmouseover="stopAutoScrolling()" onmouseout="autoScrollComponents()">
+        <div class="componentNav" onclick="navComponentsLeft()">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="componentNav right" onclick="navComponentsRight()">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>   
+        <div class="row">
+            <h2>Sell Efficiently</h2>
+            <span class="headerMessage">
+                All features are modular. Pay as you go, and let us help you optimize your back office.
+            </span>
+        </div>
+        <div class="row">
+            <ul>
+                <li id="smart-store-nav" onclick="navToFeature('smart-store')" class="featureNav selected">Smart Store</li>
+                <li id="market-intel-nav" onclick="navToFeature('market-intel')" class="featureNav">Market Intel</li>
+                <li id="unlimited-inventory-nav" onclick="navToFeature('unlimited-inventory')" class="featureNav">Unlimited Inventory</li>
+                <li id="supplier-integrations-nav" onclick="navToFeature('supplier-integrations')" class="featureNav">Supplier Integrations</li>
+                <li id="erp-integrations-nav" onclick="navToFeature('erp-integrations')" class="featureNav">ERP Integrations</li>
+            </ul>
+        </div>
+        <div id="smart-store" class="row packageDetails shown">
+            <div class="col-sm-3">
+                <img src="/img/icons/online-shop.png">
+            </div>
+            <div class="col-sm-9">
+                <h3>If your web store isn't up to date, you may be selling at a loss.</h3>
+                <span>The average e-commerce supplier has 2-5 full time employees dedicated to updating their website. We'll set you up to do that automatically, so you can focus on helping customers and growing your business.</span>
+                <span class="pricing">Starting at $200 / month</span>
+            </div>
+        </div>
+        <div id="market-intel" class="row packageDetails">
+            <div class="col-sm-3">
+                <img src="/img/icons/magnifying.png">
+            </div>
+            <div class="col-sm-9">
+                <h3>Keep tabs on the competition. Automatically.</h3>
+                <span>We can track your competitors' pricing and product information. You'll be able to easily compare your pricing and even configure automatic price matching for entire categories of products.</span>
+                <span class="pricing">Starting at $300 / month</span>
+            </div>
+        </div>        
+        <div id="unlimited-inventory" class="row packageDetails">
+            <div class="col-sm-3">
+                <img src="/img/icons/boxes.png">
+            </div>
+            <div class="col-sm-9">
+                <h3>Manage your catalogue in less than 5 minutes a week.</h3>
+                <span>Get unlimited inventory management. The Basic Plan includes your first 1,000 products, but if you're going big, we'll help you get there. We offer flexible pricing as you go, or a fixed fee for truly unlimited inventory.</span>
+                <span class="pricing">Starting at $1000 / month</span>
+            </div>
+        </div>
+        <div id="supplier-integrations" class="row packageDetails">
+            <div class="col-sm-3">
+                <img src="/img/icons/cart.png">
+            </div>           
+            <div class="col-sm-9">
+                <h3>Say goodbye to endless price sheets.</h3>
+                <span>Want to automate, but don't have an in-house technical team?<br>Never fear! Our engineering team is here to help.<br>For a small fee, we can configure datafeed integrations and automatically pull new parts data whenever it's available.</span>
+                <span class="pricing">Starting at $250 / month</span>
+            </div>            
+        </div> 
+        <div id="erp-integrations" class="row packageDetails">
+            <div class="col-sm-3">
+                <img src="/img/icons/truck.png">
+            </div>              
+            <div class="col-sm-9">
+                <h3>Connect your suppliers to your customers in real time.</h3>
+                <span>Automatically import weight and dimensions from your suppliers. If you use an Enterprise Resource Planning (ERP) tool for Pick and Ship or inventory management, we can automatically update pricing across your system, and sync newly available items for dropshipping!</span>
+                <span class="pricing">Starting at $500 / month</span>
+            </div>            
+        </div>                
+    </div>
+
+</section>
+
+<script>
+
+    autoScrollComponents()
+    setInterval( function () {
+            if ( !window.autoScrolling ) {
+                navComponents('right')
+            }
+        }, 2500)
+
+    function autoScrollComponents () {
+        window.autoScrolling = false;
+    }
+
+    function stopAutoScrolling ( ) {
+        if ( !window.autoScrolling ) {
+            window.autoScrolling = true;
+        }
+    }
+
+    function navComponentsRight ( ) {
+        stopAutoScrolling()
+        navComponents('right')
+    }
+    function navComponentsLeft ( ) {
+        stopAutoScrolling()
+        navComponents('left')
+    }    
+
+    function navComponents (direction) {
+        
+        var components = document.getElementsByClassName('packageDetails')
+        var currentComponent = document.getElementsByClassName('shown')[0]
+
+        componentToNavTo = null;
+        for ( var i = 0; i < components.length; i++ ) {
+            if ( currentComponent.id == components[i].id ) {
+                if ( direction == "left" ) {
+                    if ( i === 0 ) {
+                        return navToFeature( components[ ( components.length - 1 ) ].id )
+                    } else {
+                        return navToFeature( components[ ( i - 1 ) ].id )
+                    }
+                } else {
+                    if ( i === ( components.length - 1 ) ) {
+                        return navToFeature( components[0].id )
+                    } else {
+                        return navToFeature( components[ i + 1 ].id )
+                    }
+                }
+            }
+        }
+    }
+
+    function navToFeature ( id ) {
+        clearSelection();
+        document.getElementById(id).className += " shown"
+        document.getElementById(id + "-nav").className += " selected"        
+    }
+    function clearSelection ( ) {
+        var details = document.getElementsByClassName('shown')
+        var navLinks = document.getElementsByClassName('selected')
+
+        for (d of details) {
+            d.className = d.className.replace('shown','')
+        }
+        for (e of navLinks) {
+            e.className = e.className.replace('selected','')
+        }
+    }
+</script>

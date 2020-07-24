@@ -33,62 +33,217 @@
 //     }
 // }
 
-// variables.less
-$theme-primary: #F05F40;
-$theme-dark: #222;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "mixins",
-        "base"
-;
+@import "variables";
+@import "mixins";
+@import "base";
 
 body {
         font-family: "nunito";
+        color: $theme-dark;
+}
+h2 {
+        // text-transform: uppercase;
+        font-weight: 500;
 }
 
-/* Tmp alex tweaks for storecat logo */
-a.navbar-brand.page-scroll {
-        margin-top: -0.5em;
-        font-size: 1.85em;
-        color: white !important;
-        opacity: 1;
-        font-family: nunito !important;
-        font-weight: 900 !important;
+header {
+        background-image: url(/img/warehouse.jpg);
+        background-size: cover;
+        min-width: 100vw;
+        box-shadow: 0 6px 12px black;
+}
+.header-content-inner {
+        background: #caecd2e3;
+        border-radius: 1em;
+        padding: 4em;
+        width: fit-content;
+        box-shadow: 0px 4px 16px 0 black
 }
 .navbar-brand > img {
         display: inline-block;
-        max-height: 2.25em;
-        margin-left: -0.45em;
-        margin-top: -0.32em;
+        max-height: calc(100% + 0.85em);
+        margin-left: 1em;
+        margin-top: -0.25em;
+        margin-right: 0.25em;
+        opacity: 0.85;
 }
-header {
-        background-image: none;
-        background: blue;
-}    
-
-.header-content-inner p {
-        font-weight: 1000 !important;
+a.btn {
+        background: $theme-dark;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 0.75em;
+        font-weight: 700;
+        text-transform: capitalize !important;
+        color: white !important;        
+        padding-left: 4em;
+        padding-right: 4em;
+        box-shadow: 0 3px 6px 0 black;
+}
+a.btn:hover {
+        background: $theme-dark;
+        text-decoration: underline;
         color: white !important;
-        opacity: 1;
+}
+.text-center p, .text-center h2 {
+        color: $theme-dark;
+}
+.header-content p {
+        color: $theme-dark !important;
+        margin-bottom: 1em !important;
+        margin-top: 1em;
+        font-weight: 500;
+}
+.header h1 {
         font-family: nunito;
+        color: $theme-dark;
+        // text-transform: capitalize !important;
+        font-size: 2.75em !important;
+        line-height: 1.25em;
 }
-section#easy-onboarding {
-        overflow: hidden;
+.header-content h1.sub {
+        font-size: 2.25em !important;
 }
-.call-to-action span {
+.header-content-inner p {
+        font-weight: 500 !important;
+}
+.dropShadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #0a36152e;
+}
+a.btn.btn-default.btn-xl {
+        box-shadow: 0 3px 6px black;
+        padding-left: 5em;
+        padding-right: 5em;
+        text-transform: unset !important;
+}
+
+/* Call to action */
+.bg-primary {
+        background-color: #C3E6EF;
+        box-shadow: 0 3px 12px black;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+}
+    
+    
+.bg-primary a.btn:hover {
+        background: $theme-dark;
+        text-decoration: underline;
+}
+
+/* Services */
+.service-box img {
+        max-height: 7em;
+}
+.service-box h3 {
+        line-height: 1.25em;
+        font-weight: 550;
+        font-size: 1.5em;
+}
+.service-box {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+}
+
+
+/* Carousel header */
+.container.onboarding {
+        background: $theme-primary;
+        border-radius: 1em;
+        color: $theme-dark;
+        padding: 2em;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        position: relative;
+}
+.onboarding h2 {
+        width: fit-content;
+        margin: auto;
+}
+.onboarding h3 {
+        margin-top: 0em;
+        font-size: 1.85em;
+        font-weight: 600;
+}
+
+.onboarding span.headerMessage {
+        width: 100% !important;
+        text-align: center !important;
         display: block;
-        margin-bottom: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
 }
 .onboarding span {
-        font-size: 1.25em;
+        font-size: 1.15em;
+}
+
+.onboarding ul {
+        padding: 0;
+        width: fit-content;
+        margin: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+}
+
+.onboarding li {
+        display: inline-block;
+        padding-left: 1em;
+        padding-right: 1em;
+}
+li.featureNav.selected {
+    border-bottom: 1px $theme-dark solid;
+}
+section#components {
+        background: url(/img/shipyard.jpg);
+        background-size: contain;
+}
+.componentNav {
+        color: $theme-dark;
+        height: 100px;
+        position: absolute;
+        left: 2em;
+        z-index: 10000;
+        width: 100px;
+        top: calc(50% - 50px)
+}
+.componentNav.right {
+        left: unset;
+        right: 2em;
+        text-align: right;
+}
+.componentNav i {
+        font-size: 5em;
+}
+/* Carousel */
+.packageDetails{
+        display: none;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        min-height: 18em;
+}
+
+.packageDetails.shown {
+        display: block;
 }
 .onboarding img {
-        max-width: 100%;
-        margin-top: -5em;
+        float: right;
 }
-.header strong {
-        color: #f05f40;
+.onboarding .col-sm-9 {
+        padding-right: 10%;
+}
+span.pricing {
+        display: block;
+        padding-top: 1em;
+        font-weight: 700;
+}
+
+section {
+        width: 100vw !important;
+        min-width: 100vw !important;
 }
 
 /* Desktop */
@@ -100,21 +255,55 @@ section#easy-onboarding {
 @media screen and (max-width: 800px ) {
 	
         .navbar-header {
-                background: #3b7dfa;
+                background: $theme-dark;
+        }
+        a.navbar-brand.page-scroll {
+                color: white !important;
         }
         header {
                 height: calc( 100vh - 5em);
                 display: block;
         }
-        strong {
-                font-size: 1.3em;
-        }
         .header-content-inner {
-                margin-top: 6vh;
+                width: 80vw;
+                margin: auto;
+                margin-top: 3.5em;
+                padding: 1.5em;
         }
-        .header-content-inner h1 {
-                font-size: 8em !important;
+        .header h1 {
+                font-size: 2.75em !important;
         }
+        strong {
+                color: #0f4c5b;
+                font-weight: 900;
+                font-size: 1.25em;
+        }
+        .header-content-inner p {
+                font-size: 1.75em !important;
+        }
+        section#components {
+                background: none;
+        }
+        .onboarding ul {
+                display: none;
+        }
+        .packageDetails {
+                display: block;
+                border-top: 0.5px solid $theme-secondary;
+                padding-bottom: 2em !important;
+        }
+        .onboarding .col-sm-3 {
+                text-align: center;
+        }
+        .onboarding img {
+                float: unset;
+                max-width: 50%;
+        }
+        .componentNav {
+                display: none;
+        }
+
+
 } 
 
 /* Mobile */

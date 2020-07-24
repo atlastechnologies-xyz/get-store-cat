@@ -1,0 +1,42 @@
+---
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables";
+@import "mixins";
+@import "base";
+
+
+header {
+    height: 30vh;
+    min-height: fit-content !important;
+}
+
+.container.row {
+    margin: auto;
+}
+a {
+    color: $theme-secondary;
+}
+.docPreview h1 {
+    margin-top: 0;
+}
+.docPreview {
+    padding: 1em;
+    border: 0.25px solid $theme-dark;
+    border-radius: 1em;
+    margin-top: 1em;
+    padding-bottom: 3.25em;
+}
+span.startNowButton {
+    border-radius: 0.75em;
+    padding: 1em;
+    border: 0.25px solid $theme-dark;
+    float: right;
+    display: block;
+    text-transform: uppercase;
+    color: $theme-dark;
+}
+.docsList.container.row {
+    min-height: 80vh;
+}
