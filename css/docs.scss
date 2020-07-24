@@ -8,8 +8,12 @@
 
 
 header {
-    height: 30vh;
+    height: 35vh;
     min-height: fit-content !important;
+    margin-bottom: 3em;
+}
+.header-content-inner {
+    padding: 1em;
 }
 
 .container.row {
@@ -39,4 +43,34 @@ span.startNowButton {
 }
 .docsList.container.row {
     min-height: 80vh;
+}
+.header-content-inner {
+    padding: 1em;
+    overflow: hidden;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 65vh;
+    }
+
+    .header-content h1 {
+        font-size: 1.95em !important;
+    }
+    .header-content p {
+        font-size: 1.25em !important;
+    }
+    .docPreview {
+        padding-bottom: 4em;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 330px) {
+	
 }

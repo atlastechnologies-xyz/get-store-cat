@@ -59,7 +59,8 @@ header {
         border-radius: 1em;
         padding: 4em;
         width: fit-content;
-        box-shadow: 0px 4px 16px 0 black
+        box-shadow: 0px 4px 16px 0 black;
+        overflow: hidden;
 }
 .navbar-brand > img {
         display: inline-block;
@@ -302,7 +303,15 @@ section {
         .componentNav {
                 display: none;
         }
-
+        footer ul {
+                padding-left: 2em;
+        }
+        footer li {
+                padding: 1em;
+                width: calc(50% - 2em);
+                text-align: center;
+                display: inline-block;
+        }
 
 } 
 
