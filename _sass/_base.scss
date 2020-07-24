@@ -167,7 +167,7 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -376,9 +376,9 @@ footer span {
     padding-top: 1em;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, span, p {
     font-family : "nunito";
 }
-span, p {
-    font-family: sans-serif;
-}
+// span, p {
+//     font-family: sans-serif;
+// }
