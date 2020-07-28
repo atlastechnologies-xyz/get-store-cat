@@ -52,7 +52,7 @@ header {
         background-image: url(/img/warehouse.jpg);
         background-size: cover;
         min-width: 100vw;
-        box-shadow: 0 6px 12px black;
+        box-shadow: 0 6px 12px #00000029;
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
 }
@@ -61,7 +61,7 @@ header {
         border-radius: 1em;
         padding: 4em;
         width: fit-content;
-        box-shadow: 0px 4px 16px 0 black;
+        box-shadow: 0px 4px 16px 0 #00000029;
         overflow: hidden;
 }
 .navbar-brand > img {
@@ -82,7 +82,7 @@ a.btn {
         color: white !important;        
         padding-left: 4em;
         padding-right: 4em;
-        box-shadow: 0 3px 6px 0 black;
+        box-shadow: 0 3px 6px 0 #00000029;
 }
 a.btn:hover {
         background: $theme-dark;
@@ -120,7 +120,7 @@ a.btn:hover {
         border-bottom-right-radius: 24px;
 }
 a.btn.btn-default.btn-xl {
-        box-shadow: 0 3px 6px black;
+        box-shadow: 0 3px 6px #00000029;
         padding-left: 5em;
         padding-right: 5em;
         text-transform: unset !important;
@@ -129,7 +129,7 @@ a.btn.btn-default.btn-xl {
 /* Call to action */
 .bg-primary {
         background-color: #C3E6EF;
-        box-shadow: 0 3px 12px black;
+        box-shadow: 0 3px 12px #00000029;
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
         margin-top: -2em;
