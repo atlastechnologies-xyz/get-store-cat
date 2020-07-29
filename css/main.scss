@@ -55,6 +55,8 @@ header {
         box-shadow: 0 6px 12px #00000029;
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
+        z-index: 15 !important;
+        position: relative;
 }
 .header-content-inner {
         background: #caecd2e3;
@@ -133,6 +135,8 @@ a.btn.btn-default.btn-xl {
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
         margin-top: -2em;
+        z-index: 10 !important;
+        position: relative;
 }
     
     
@@ -251,6 +255,35 @@ section {
         width: 100vw !important;
         min-width: 100vw !important;
 }
+
+/* Testimonials */
+.bg-primary.testimonial {
+        background: #0f4c5b;
+        padding-top: 5em;
+        padding-bottom: 3em;
+        margin-top: -2em;
+        z-index: 5 !important;
+        position: relative;
+}
+img.headshot {
+        border-radius: 50%;
+        background: white;
+        max-height: 12em;
+}
+.testimonial h2.section-heading {
+        margin-top: 0.75em;
+        font-size: 1.25em;
+        color: white;
+}
+.testimonial p {
+        margin-top: 0.5em;
+        color: white;
+        margin-bottom: 0;
+}
+.testimonial span {
+        color: white;
+}
+
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
