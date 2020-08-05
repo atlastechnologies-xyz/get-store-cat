@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+<link rel="stylesheet" href="/css/integrations.css" type="text/css">
+
+<body id="page-top">
+  {% include nav.html %}
+  {% include integrationHeader.html %}
+    <div class="container row">
+        <div class="col-md-12">
+            <h1>{{ page.title }}</h1>
+            <span>{{ page.previewText }}</span>
+        </div>
+    </div>
+
+    <div class="container row">
+        <div class="col-md-12">
+            {{ content }}
+        </div>
+    </div>
+    {% include moreIntegrations.html %}
+    {% include footer.html %}
+</body>
+
+</html>

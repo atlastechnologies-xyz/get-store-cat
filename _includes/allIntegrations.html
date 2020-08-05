@@ -1,0 +1,19 @@
+
+
+<div class="allIntegrations container row">
+    <h1>Search Compatible Systems</h1>
+    <span>From E-Commerce to Supply Chain, we've got you covered. Use StoreCat to bridge your systems. Use the search below to check if your system is supported.</span>
+    <input id="searchInput" type="text" placeholder="Start typing..."  onkeyup="refreshSearchResults('searchResults', 'searchInput')">
+    <div id="searchResults" class="row-sm-12">
+        {% for integration in site.integrations %}
+            {% include integrationPreview.html
+                title=integration.title
+                img=integration.img
+                text=integration.previewText    
+                link=integration.permalink
+            %}
+        {% endfor %}
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/search.js" defer>

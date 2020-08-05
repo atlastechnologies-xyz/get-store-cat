@@ -1,0 +1,43 @@
+---
+---
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables";
+@import "mixins";
+@import "base";
+
+/* integrations.css */
+.integrationPreview img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+.container.row {
+    padding-bottom: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.integrationPreview h1 {
+    font-size: 2.75em !important;
+    color: $theme-dark;
+}
+
+.integrationPreview span {
+    color:  $theme-dark;
+    font-size: 1.25em;
+}
+.integrationPreview span {
+    color: #0F4C5C;
+    font-size: 1.25em;
+    min-height: 6em;
+    display: block;
+}
+input#searchInput {
+    margin-left: 2em;
+    padding: 0.25em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+}
