@@ -41,6 +41,21 @@ input#searchInput {
     margin-top: 1em;
     width: 100%;
 }
+.brandPreview {
+    display: inline-block;
+}
+a.browseButtons {
+    padding: 0.5em 1em 0.5em 1em;
+    background: green;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-top: 3em;
+    display: block;
+    width: fit-content;
+}
 
 .integrationTypes li {
     display: inline-block;
