@@ -59,7 +59,7 @@ header {
         position: relative;
 }
 .header-content-inner {
-        background: #caecd2e3;
+        background: #caecd2eb;
         border-radius: 1em;
         padding: 4em;
         width: fit-content;
@@ -285,6 +285,21 @@ img.headshot {
 }
 
 
+/* Process */
+.process-box {
+        text-align: left;
+        padding: 1em;
+        padding-right: 8em;
+        min-height: 30vh;
+}
+.process-box img {
+        width: 6em;
+}    
+.pbx.highlight {
+        background: #caecd2;
+        border-radius: 12px;
+}
+
 /* Desktop */
 @media screen and (max-width: 1000px) {
 
@@ -292,7 +307,9 @@ img.headshot {
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
-	
+	.process-box {
+                padding-right: 1em;
+        }
         .navbar-header {
                 background: $theme-dark;
         }
