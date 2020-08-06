@@ -320,10 +320,12 @@ img.headshot {
         float: left;
         bottom: 0;
         position: absolute;
+        font-size: 1.5rem;
     }
-#products .col-sm-6 {
-        min-height: 40vh;
+    #products .col-sm-6 {
+        min-height: 30vh;
         padding-bottom: 4rem;
+        margin-bottom: 10rem;
     }
     h1.sectionHeader {
         margin-bottom: 1em;
@@ -400,7 +402,13 @@ img.headshot {
         }
         h1.sectionHeader {
                 margin-left: unset;
-            }
+        }
+        #products .row.container {
+                padding-right: 1.5rem;
+        }
+        #products a {
+                font-size: 1.75rem;
+        }
 } 
 
 /* Mobile */
