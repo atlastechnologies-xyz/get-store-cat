@@ -1,0 +1,25 @@
+---
+    layout: data
+    permalink: /map.json
+---
+{
+    "integrations" : [{% for integration in site.integrations %}
+            {
+                "title" : "{{ integration.title | strip_html | strip_newlines | xml_escape }}",
+                "link" : "{{ integration.permalink | strip_html | strip_newlines | xml_escape  }}",
+                "summary": "{{ integration.previewText  | strip_html | strip_newlines | truncatewords: 50 | xml_escape }}",
+                "image" : "{{ integration.img | strip_html | strip_newlines | xml_escape  }}",
+                "tags" : "{{ integration.tags }}"
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}], 
+    "extensions" : [{% for extension in site.extensions %}
+            {
+                "title" : "{{ extension.title  | strip_html | strip_newlines | xml_escape }}",
+                "summary" : "{{ extension.previewText  | strip_html | strip_newlines | truncatewords: 50 | xml_escape }}",{% for course in site.courses %}{% if course.slug == module.course %}
+                "image" : "{{ extension.img  | strip_html | strip_newlines | xml_escape }}",
+                "link" : "{{ extension.permalink  | strip_html | strip_newlines | xml_escape }}",
+                "tags" : "{{ integration.tags }}"
+                {% endif %}{% endfor %}
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}]
+}

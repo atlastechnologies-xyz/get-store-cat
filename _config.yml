@@ -16,6 +16,12 @@ collections:
   docs: 
     layout: individualDoc
     output: true  
+  integrations: 
+    layout: integration
+    output: true  
+  extensions: 
+    layout: extension
+    output: true          
 
 defaults:
   - scope:
