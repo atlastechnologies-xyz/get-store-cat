@@ -299,6 +299,36 @@ img.headshot {
         background: bisque;
 }
 
+/* Products */
+#products .row.container {
+        margin: auto;
+        padding-bottom: 10vh;
+        padding-right: 12rem;
+}
+
+#products a {
+        color: white;
+        font-weight: 700;
+        display: block;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        background: #0f4b5a;
+        text-align: center;
+        max-width: fit-content;
+        margin-top: 1em;
+        float: left;
+        bottom: 0;
+        position: absolute;
+    }
+#products .col-sm-6 {
+        min-height: 40vh;
+        padding-bottom: 4rem;
+    }
+    h1.sectionHeader {
+        margin-bottom: 1em;
+        margin-left: -0.5em;
+    }
+
 /* Desktop */
 @media screen and (max-width: 1000px) {
 
@@ -367,7 +397,9 @@ img.headshot {
                 text-align: center;
                 display: inline-block;
         }
-
+        h1.sectionHeader {
+                margin-left: unset;
+            }
 } 
 
 /* Mobile */

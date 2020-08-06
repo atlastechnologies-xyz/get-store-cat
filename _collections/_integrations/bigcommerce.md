@@ -8,17 +8,17 @@ startup: 400
 connectedService: Big Commerce
 connectedServiceUrl: https://www.bigcommerce.com/
 previewText: "If your website is running on Big Commerce, we can help!"
-permalink: /integrations/financialforce/
+permalink: /integrations/bigcommerce/
 ---
 
-# Shopify E-Commerce Management
-Your Shopify store may be the core of your E-Commerce offering, but it's only part of your operation. Use StoreCat to easily import new items from suppliers, and instantly add them to your store. Keep all your images and product data secure in your own private cloud, and only transfer the ones that you want to sell. 
+# Big Commerce E-Commerce Management
+Your Big Commerce store may be the core of your E-Commerce offering, but it's only part of your operation. Use StoreCat to easily import new items from suppliers, and instantly add them to your store. Keep all your images and product data secure in your own private cloud, and only transfer the ones that you want to sell. 
 
 ## Inventory Sync
 Connect your web store to your inventory system through StoreCat, and even extend the functionality to allow you to see upstream supply availability for dropshipped items. 
 
 ## Grow Easily
-How many employees does it take to manage a Shopify store? Easy. None. Your employees should be talking to your suppliers and finding new sources of unique products. Let them focus on helping you expand your business, and leave the data transfer to the machines. 
+How many employees does it take to manage a Big Commerce store? Easy. None. Your employees should be talking to your suppliers and finding new sources of unique products. Let them focus on helping you expand your business, and leave the data transfer to the machines. 
 
 ## Automate, and Save
 Automation not only reduces employee headaches, but can also ensure that your site is as up to date as possible, which can help to minimize writeoff orders and inaccurate supply availability.

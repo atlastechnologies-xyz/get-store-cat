@@ -35,18 +35,23 @@
     display: block;
 }
 input#searchInput {
-    margin-left: 2em;
     padding: 0.25em;
     margin-bottom: 1em;
     margin-top: 1em;
     width: 100%;
+}
+span.loading {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
 }
 .brandPreview {
     display: inline-block;
 }
 a.browseButtons {
     padding: 0.5em 1em 0.5em 1em;
-    background: green;
+    background: $theme-dark;
     color: white;
     text-transform: capitalize;
     border-radius: 20px;
@@ -55,8 +60,43 @@ a.browseButtons {
     margin-top: 3em;
     display: block;
     width: fit-content;
+    text-align: center;
 }
 
 .integrationTypes li {
     display: inline-block;
+}
+
+.integrationTypes .col-sm-4 {
+    padding: 4em;
+    text-align: center;
+}
+
+.integrationTypes h1 {
+    font-size: 3em !important;
+    text-transform: capitalize;
+}
+div#integrationsBrowser {
+    padding-top: 10vh;
+}
+#integrationsBrowser h1 {
+    font-size: 4.5rem !important;
+}
+#integrationsBrowser span {
+    font-size: 1.65rem;
+}
+.integrationPreview h1 {
+    font-size: 3.5rem !important;
+    margin-top: 0;
+}
+
+.integrationPreview {
+    padding-bottom: 2rem;
+    border-bottom: 0.1px solid #0f4c5b69;
+    padding-top: 2rem;
+}
+header.integrationHeader {
+    max-height: 40vh !important;
+    overflow: hidden;
+    min-height: 70vh !important;
 }
