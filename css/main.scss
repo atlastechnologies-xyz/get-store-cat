@@ -58,6 +58,7 @@ header {
         border-bottom-right-radius: 24px;
         z-index: 15 !important;
         position: relative;
+        margin-bottom: 3rem;
 }
 .header-content-inner {
         background: #caecd2eb;
@@ -352,6 +353,7 @@ h1.sectionHeader {
         width: 7em;
         padding: 1em;
     }
+
 
 /* Desktop */
 @media screen and (max-width: 1000px) {

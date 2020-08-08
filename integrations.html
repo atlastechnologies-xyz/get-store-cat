@@ -23,26 +23,15 @@ permalink: /integrations/
         <span>Your web store may be the core of your E-Commerce offering, but it’s only part of your operation. StoreCat integrates with your e-commerce platform (like Shopify) and updates your site automatically, so you can focus on helping customers and growing your business. Keep customers happy and your wallet full. <br><br>When your suppliers update their prices, StoreCat’s Web Store integration converts each one to your desired product price, and then automatically updates your Web Store.
             </span>
         <ul>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
+        {% for integration in site.integrations %}
+            {% if integration.tags contains "webstore" %}
+                <li class="brandPreview">
+                    <a href="{{ integration.permalink }}">
+                        <img src="/img/{{ integration.img }}">
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
         </ul>
         <a class="browseButtons" href="#integrationsBrowser">Browse E-Commerce Management Solutions</a>
     </div>
@@ -55,7 +44,7 @@ permalink: /integrations/
         <h1>Say goodbye to endless price sheets</h1>
         <span>StoreCat’s team of engineers is here to help you automate without your own technical team. StoreCat connects to each of your suppliers and automatically pulls new item information from your suppliers whenever it's available. <br>This information includes pricing, new items, and product details. If there’s something else you need, StoreCat will be sure to grab that too.</span>            
         <ul>
-            <li class="brandPreview">
+            <!-- <li class="brandPreview">
                 <a href="/integrations/shopify/">
                     <img src="/img/integrations/icons/shopify.png">
                 </a>
@@ -74,9 +63,9 @@ permalink: /integrations/
                 <a href="/integrations/shopify/">
                     <img src="/img/integrations/icons/shopify.png">
                 </a>
-            </li>
+            </li> -->
         </ul>
-        <a class="browseButtons" href="#integrationsBrowser">See Suppliers</a>
+        <a class="browseButtons" href="/supplier-integrations/">Learn More about Connecting With Suppliers</a>
     </div>
 </div>
 <div class="row container integrationTypes">
@@ -93,26 +82,15 @@ permalink: /integrations/
             Connect StoreCat to your current Enterprise Resource Planning (ERP) tool (like [popular ERP tool]) and StoreCat will sync all product information across the platform, integrating the necessary information from your webstore and suppliers.
         </span>            
         <ul>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
-            <li class="brandPreview">
-                <a href="/integrations/shopify/">
-                    <img src="/img/integrations/icons/shopify.png">
-                </a>
-            </li>
+            {% for integration in site.integrations %}
+            {% if integration.tags contains "erp" %}
+                    <li class="brandPreview">
+                        <a href="{{ integration.permalink }}">
+                            <img src="/img/{{ integration.img }}">
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
         </ul>
         <a class="browseButtons" href="#integrationsBrowser">Browse Systems and ERP Solutions</a>
     </div>
