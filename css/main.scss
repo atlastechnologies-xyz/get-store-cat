@@ -40,7 +40,8 @@
 @import "base";
 
 body {
-        font-family: "nunito";
+        // font-family: "nunito";
+        font-family: 'Libre Franklin', sans-serif;
         color: $theme-dark;
 }
 h2 {
@@ -60,7 +61,7 @@ header {
 }
 .header-content-inner {
         background: #caecd2eb;
-        border-radius: 1em;
+        border-radius: 5px;
         padding: 4em;
         width: fit-content;
         box-shadow: 0px 4px 16px 0 #00000029;
@@ -101,7 +102,8 @@ a.btn:hover {
         font-weight: 500;
 }
 .header h1 {
-        font-family: nunito;
+        // font-family: nunito;
+        font-family: 'Libre Franklin', sans-serif;
         color: $theme-dark;
         // text-transform: capitalize !important;
         font-size: 2.75em !important;
@@ -269,6 +271,7 @@ img.headshot {
         border-radius: 50%;
         background: white;
         max-height: 12em;
+        float: right;
 }
 .testimonial h2.section-heading {
         margin-top: 0.75em;
@@ -276,7 +279,7 @@ img.headshot {
         color: white;
 }
 .testimonial p {
-        margin-top: 0.5em;
+        margin-top: 2em;
         color: white;
         margin-bottom: 0;
 }
@@ -301,35 +304,53 @@ img.headshot {
 }
 
 /* Products */
+section#products {
+        background: #6dc2d859;
+        margin-bottom: 4em;
+    }
+#products h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
 #products .row.container {
         margin: auto;
-        padding-bottom: 10vh;
+        // padding-bottom: 10vh;
         padding-right: 12rem;
 }
 
 #products a {
-        color: white;
+        color: #0f4c5b;
         font-weight: 700;
         display: block;
         padding: 0.5em 1em;
-        border-radius: 20px;
-        background: #0f4b5a;
+        border: 2px solid #0f4c5b;
+        border-radius: 5px;
         text-align: center;
         max-width: fit-content;
-        margin-top: 1em;
         float: left;
         bottom: 0;
         position: absolute;
         font-size: 1.5rem;
-    }
-    #products .col-sm-6 {
+        min-width: calc(100% - 2em);
+        margin: auto;
+}
+
+#products .col-sm-6 {
         min-height: 30vh;
         padding-bottom: 4rem;
         margin-bottom: 10rem;
-    }
-    h1.sectionHeader {
+}
+h1.sectionHeader {
         margin-bottom: 1em;
+        text-align: center;
         margin-left: -0.5em;
+        font-size: 4.5rem !important;
+        font-weight: 600;
+}
+
+#contact img.wow.bounceIn.animated {
+        width: 7em;
+        padding: 1em;
     }
 
 /* Desktop */
@@ -357,6 +378,7 @@ img.headshot {
                 margin: auto;
                 margin-top: 3.5em;
                 padding: 1.5em;
+                border-radius: 5px;
         }
         .header h1 {
                 font-size: 2.75em !important;
