@@ -134,8 +134,8 @@ a.btn.btn-default.btn-xl {
 .bg-primary {
         background-color: #C3E6EF;
         box-shadow: 0 3px 12px #00000029;
-        border-bottom-left-radius: 24px;
-        border-bottom-right-radius: 24px;
+        // border-bottom-left-radius: 24px;
+        // border-bottom-right-radius: 24px;
         margin-top: -2em;
         z-index: 10 !important;
         position: relative;
@@ -360,6 +360,33 @@ h1.sectionHeader {
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
+        .navbar-header {
+                background: none !important;
+        }
+        
+        a.integrationsBrowseButton {
+                background: #17346e;
+                color: white !important;
+        }
+        nav#mainNav {
+                background: none;
+                border: none;
+        }
+        ul.nav.navbar-nav.navbar-right {
+                background: #0000007d;
+        }
+        .navbar-brand img {
+                display: none;
+        }
+        button.navbar-toggle.collapsed {
+                border: none;
+        }
+        span.icon-bar {
+                color: white;
+                background: white;
+                background-color: white !important;
+                height: 3px;
+        }
 	.process-box {
                 padding-right: 1em;
         }
@@ -380,8 +407,9 @@ h1.sectionHeader {
                 padding: 1.5em;
                 border-radius: 5px;
         }
+        
         .header h1 {
-                font-size: 2.75em !important;
+                font-size: 2.25em !important;
         }
         strong {
                 color: #0f4c5b;
@@ -389,8 +417,9 @@ h1.sectionHeader {
                 font-size: 1.25em;
         }
         .header-content-inner p {
-                font-size: 1.75em !important;
+                font-size: 1.25em !important;
         }
+        
         section#components {
                 background: none;
         }
