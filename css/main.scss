@@ -352,8 +352,14 @@ h1.sectionHeader {
 #contact img.wow.bounceIn.animated {
         width: 7em;
         padding: 1em;
-    }
+}
 
+section#success {
+        padding-top: 1rem;
+}
+img.headshot {
+        margin-top: 6rem;
+}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {

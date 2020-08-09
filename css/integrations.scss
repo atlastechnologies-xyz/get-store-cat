@@ -177,7 +177,9 @@ div#integrationsBrowser {
     padding-left: 10%;
     padding-right: 10%;
 }
-
+span.loading {
+    padding-bottom: 20rem;
+}
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
