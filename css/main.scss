@@ -403,6 +403,32 @@ li#phoneNumber {
         padding: 0 !important;
     }
 
+    /* Market 360 */
+    section.marketThreeSixty {
+        background: #0f4c5b5e;
+        margin-top: -8rem;
+    }
+    .marketThreeSixty h1 {
+        font-size: 2.75rem !important;
+        font-weight: 600;
+        color: #0f4c5b;
+    }
+    .marketThreeSixty span {
+        color: #2b2424;
+        font-size: 1.5rem;
+    }
+    a.browseButtons {
+        width: fit-content;
+        margin: auto;
+    }
+    .marketThreeSixty .row.container.extensionTypes {
+        padding-bottom: 0;
+    }
+    .row.container.market360 {
+        padding-bottom: 0;
+    }
+    
+    
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
