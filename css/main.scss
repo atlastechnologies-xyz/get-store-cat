@@ -62,7 +62,7 @@ header {
 }
 .header-content-inner {
         background: #caecd2eb;
-        background: #cceaf1;
+        background: #C8E7FFE6;
         border-radius: 5px;
         padding: 4em;
         width: fit-content;
@@ -134,7 +134,7 @@ a.btn.btn-default.btn-xl {
 
 /* Call to action */
 .bg-primary {
-        background-color: #C3E6EF;
+        background-color: #C8E7FF;
         box-shadow: 0 3px 12px #00000029;
         // border-bottom-left-radius: 24px;
         // border-bottom-right-radius: 24px;
@@ -293,7 +293,7 @@ img.headshot {
 separator {
         display: block;
         width: 100%;
-        border-bottom: 5px solid yellow;
+        border-bottom: 2px solid #97D1FF;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -307,7 +307,7 @@ separator {
         min-height: 30vh;
 }
 .process-box img {
-        width: 6em;
+        width: 8.5em;
 }    
 .pbx.highlight {
         background: #caecd2;
@@ -316,7 +316,7 @@ separator {
 
 /* Products */
 section#products {
-        background: #6dc2d859;
+        background: #C8E7FF;
         margin-bottom: 4em;
     }
 #products h2 {
@@ -483,7 +483,7 @@ span.sectionHeader {
                 margin-top: 3.5em;
                 padding: 1.5em;
                 border-radius: 5px;
-                background: #cceaf1 !important;
+                background: #C8E7FFE6 !important;
         }
         
         .header h1 {
