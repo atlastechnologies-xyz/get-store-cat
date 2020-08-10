@@ -65,6 +65,7 @@ a.browseButtons {
 
 .integrationTypes li {
     display: inline-block;
+    padding-top: 1.5rem;
 }
 
 .integrationTypes .col-sm-4 {
@@ -107,36 +108,27 @@ div#searchResults {
     text-align: center;
 }
 
-
 #searchResults a {
     max-width: calc(25% - 2.5em);
     display: inline-block;
     overflow: hidden;
     min-height: fit-content;
-    margin: 1em;
-    border: 1px solid $theme-dark;
-    border-radius: 5px;
-    height: 15rem;
+    height: fit-content;
     position: relative;
-    background: white;
+    background: none !important;
+    border: none;
 }
 #searchResults img {
     max-width: 100%;
     padding: 1em;
     display: block;
-}   
-#searchResults h1 {
     width: 100%;
-    font-size: 1.5rem !important;
-    color:  $theme-dark;
-    text-align: center;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    font-weight: 600;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}    
+    height: auto;
+}
+#searchResults h1 {
+    display: none !important;
+}
+
 .integrationTypes ul {
     padding-left: 0;
     padding-top: 2rem;
