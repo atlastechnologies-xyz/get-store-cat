@@ -1,5 +1,5 @@
 ---
-img: /integrations/shopify.png
+img: /integrations/Shopify-square.png
 title: Shopify Web Store Automation
 layout: integration
 tags: webstore

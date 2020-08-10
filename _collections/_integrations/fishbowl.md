@@ -1,5 +1,5 @@
 ---
-img: /integrations/Fishbowl_Logo.png
+img: /integrations/Fishbowl-square.png
 title: FishBowl ERP
 layout: integration
 tags: erp 

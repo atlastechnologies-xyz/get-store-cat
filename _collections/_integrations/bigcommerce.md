@@ -1,5 +1,5 @@
 ---
-img: /integrations/BigCommerce-logo-dark.png
+img: /integrations/BigCommerce-square.png
 title: Big Commerce Web Store
 tags: webstore 
 layout: integration

@@ -1,5 +1,5 @@
 ---
-img: /integrations/netsuite-logo.png
+img: /integrations/NetSuite-square.png
 title: NetSuite ERP
 layout: integration
 tags: erp 

@@ -1,5 +1,5 @@
 ---
-img: /integrations/laravel-logo.jpg
+img: /integrations/Laravel-square.png
 title: Laravel Web Store
 tags: webstore 
 layout: integration
