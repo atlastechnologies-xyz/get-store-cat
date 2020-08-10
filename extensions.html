@@ -1,19 +1,52 @@
 ---
 title: Make your web store smart!
 layout: front
-permalink: /extensions/
+permalink: /products/extensions/
+stylesheet: extensions.css
 ---
 
 {% include header.html 
     title="Get the Tools You Need"
     image="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-    text="From market analysis to report generation, we've got you covered. Automate, and relax."
+    text="From market analysis to report generation, we've got you covered. Automate, and Relax."
     cta="Start Building"
-    ctaLink="#components"
+    ctaLink="#contact"
 %}
+
+{% include marketThreeSixty.html 
+    ctaText="Get Market 360"
+    ctaLink="contact"    
+%}
+
+<div class="container row otherExtensions">
+    <h1 class="sectionHeader">Other Extensions</h1>
+    <div class="row container extensionTypes">
+        <div class="col-sm-4">
+            <img src="/img/icons/truck.png">
+        </div>
+        <div class="col-sm-8">
+            <h1>Where do your products come from?</h1>
+            <span>It's not easy to ensure proper sourcing, but we can help. We make it simple to keep track of your suppliers, and verify environmentally and socially sustainable certifications.</span>            
+
+            <a class="browseButtons" href="#contact">Supplier Transparency Tools</a>
+        </div>
+    </div>
+    <div class="row container extensionTypes">
+        <div class="col-sm-4">
+            <img src="/img/icons/boxes.png">
+        </div>
+        <div class="col-sm-8">
+            <h1>Say goodbye to endless price sheets</h1>
+            <span>Our unique tools can help you quickly take your product catalogue online, and start taking advantage of your e-commerce potential.</span>            
+
+            <a class="browseButtons" href="#contact">Try Easy Onboarding</a>
+        </div>
+    </div>
+</div>
+
 {% include testimonial.html %}
 
-{% include componentCarousel.html %}
+<!-- {% include componentCarousel.html %} -->
 
 {% include contact.html %}
 {% include footer.html %}

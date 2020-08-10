@@ -6,8 +6,8 @@
 @import "mixins";
 @import "base";
 
-/* integrations.css */
-.integrationPreview img {
+/* extensions.css */
+.extensionPreview img {
     width: 100%;
     height: auto;
     position: relative;
@@ -19,17 +19,17 @@
     margin-left: auto;
     margin-right: auto;
 }
-.integrationPreview h1 {
+.extensionPreview h1 {
     font-size: 2.75em !important;
     color: $theme-dark;
 }
 
-.integrationPreview span {
+.extensionPreview span {
     color:  $theme-dark;
     font-size: 1.25em;
 }
-.integrationPreview span {
-    color: #0E186E;
+.extensionPreview span {
+    color: #0F4C5C;
     font-size: 1.25em;
     min-height: 6em;
     display: block;
@@ -63,39 +63,20 @@ a.browseButtons {
     text-align: center;
 }
 
-.integrationTypes li {
+.extensionTypes li {
     display: inline-block;
 }
 
-.integrationTypes .col-sm-4 {
+.extensionTypes .col-sm-4 {
     padding: 4em;
     text-align: center;
 }
 
-.integrationTypes h1 {
+.extensionTypes h1 {
     font-size: 3em !important;
     text-transform: capitalize;
 }
-div#integrationsBrowser {
-    padding-top: 10vh;
-}
-#integrationsBrowser h1 {
-    font-size: 4.5rem !important;
-}
-#integrationsBrowser span {
-    font-size: 1.65rem;
-}
-.integrationPreview h1 {
-    font-size: 3.5rem !important;
-    margin-top: 0;
-}
-
-.integrationPreview {
-    padding-bottom: 2rem;
-    border-bottom: 0.1px solid #0f4c5b69;
-    padding-top: 2rem;
-}
-header.integrationHeader {
+header.extensionHeader {
     max-height: 40vh !important;
     overflow: hidden;
     min-height: 70vh !important;
@@ -168,17 +149,6 @@ img.brandImg {
 img.storeCatImg {
     float: left;
     height: -webkit-fill-available;
-}
-div#integrationsBrowser {
-    padding-bottom: 0;
-    background: #daeef4;
-    padding-top: 0;
-    width: 100vw;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-span.loading {
-    padding-bottom: 20rem;
 }
 
 /* Tablet */

@@ -1,14 +1,14 @@
 ---
-img: /integrations/bigcommerce.jpg
+img: /integrations/BigCommerce-logo-dark.png
 title: Big Commerce Web Store
 tags: webstore 
 layout: integration
 fee: 100
 startup: 400
 connectedService: Big Commerce
-connectedServiceUrl: https://www.bigcommerce.com/
+connectedServiceUrl: https://www.BigCommerce.com/
 previewText: "If your website is running on Big Commerce, we can help!"
-permalink: /integrations/bigcommerce/
+permalink: /integrations/BigCommerce/
 ---
 
 # Big Commerce E-Commerce Management

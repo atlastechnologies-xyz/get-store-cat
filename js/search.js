@@ -130,8 +130,8 @@ function addResultToResultsContainer (container, data) {
         link.target = "_blank"
         link.href = data.link
 
-    var imgCntr = document.createElement('div')
-        imgCntr.className = 'col-sm-4'
+    // var imgCntr = document.createElement('div')
+    //     imgCntr.className = 'col-sm-4'
         
     var img = document.createElement('img')
     
@@ -141,17 +141,18 @@ function addResultToResultsContainer (container, data) {
         img.src = "/img/logo.jpg"
     }
 
-    imgCntr.appendChild(img)
+    // imgCntr.appendChild(img)
+    link.appendChild(img)
         
-    var summary = document.createElement('span')
-        summary.className = "summary"
-        summary.textContent = removeHTMLEntities(data.summary)
+    // var summary = document.createElement('span')
+    //     summary.className = "summary"
+    //     summary.textContent = removeHTMLEntities(data.summary)
 
-    var row = document.createElement('div')
-        row.className = "row"
+    // var row = document.createElement('div')
+    //     row.className = "row"
 
-    var infoContainer = document.createElement('div')
-        infoContainer.className = "col-sm-8"
+    // var infoContainer = document.createElement('div')
+    //     infoContainer.className = "col-sm-8"
 
     var title = document.createElement('h1')
         title.className = "title"
@@ -161,16 +162,18 @@ function addResultToResultsContainer (container, data) {
     //     score.className = "score"
     //     score.textContent = data.score
 
-    row.appendChild(imgCntr)
 
-    infoContainer.appendChild(title)
-    infoContainer.appendChild(summary)
+    link.appendChild(title)
+    // row.appendChild(imgCntr)
+
+    // infoContainer.appendChild(title)
+    // infoContainer.appendChild(summary)
     // infoContainer.appendChild(score)
-    row.appendChild(infoContainer)
+    // row.appendChild(infoContainer)
     
-    link.appendChild(row)
-    cntr.appendChild(link)
-    container.appendChild(cntr)
+    // link.appendChild(imgCntr)
+    // cntr.appendChild(link)
+    container.appendChild(link)
 
 }
 

@@ -58,9 +58,11 @@ header {
         border-bottom-right-radius: 24px;
         z-index: 15 !important;
         position: relative;
+        margin-bottom: 3rem;
 }
 .header-content-inner {
         background: #caecd2eb;
+        background: #cceaf1;
         border-radius: 5px;
         padding: 4em;
         width: fit-content;
@@ -279,13 +281,22 @@ img.headshot {
         color: white;
 }
 .testimonial p {
-        margin-top: 2em;
+        margin-top: 10%;;
         color: white;
         margin-bottom: 0;
 }
 .testimonial span {
         color: white;
 }
+
+/* seperator */
+separator {
+        display: block;
+        width: 100%;
+        border-bottom: 5px solid yellow;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
 
 /* Process */
@@ -351,7 +362,73 @@ h1.sectionHeader {
 #contact img.wow.bounceIn.animated {
         width: 7em;
         padding: 1em;
+}
+
+section#success {
+        padding-top: 1rem;
+}
+img.headshot {
+        margin-top: 6rem;
+}
+
+a.integrationsBrowseButton {
+        background: #0f4c5b;
+        color: white !important;
+}
+span.sectionHeader {
+        width: 100% !important;
+        text-align: center !important;
+        display: block;
+        margin-top: -3rem;
+        font-size: 1.75rem;
+        margin-bottom: 4rem;
+}    
+
+
+/* Phone Number */
+li#phoneNumber {
+        padding: 1rem;
+        display: block;
+        right: 0;
+        border: 1px solid #0f4c5b;
+        border-radius: 5px;
+        background: #0f4c5b;
+        margin-top: 0.35rem;
+        float: right;
+        margin-right: 0.5rem;
     }
+    .phoneNumber a {
+        color: white;
+        font-weight: 500;
+        padding: 0 !important;
+    }
+
+    /* Market 360 */
+    section.marketThreeSixty {
+        background: #0f4c5b5e;
+        margin-top: -8rem;
+    }
+    .marketThreeSixty h1 {
+        font-size: 2.75rem !important;
+        font-weight: 600;
+        color: #0f4c5b;
+    }
+    .marketThreeSixty span {
+        color: #2b2424;
+        font-size: 1.5rem;
+    }
+    a.browseButtons {
+        width: fit-content;
+        margin: auto;
+    }
+    .marketThreeSixty .row.container.extensionTypes {
+        padding-bottom: 0;
+    }
+    .row.container.market360 {
+        padding-bottom: 0;
+    }
+    
+    
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
@@ -406,6 +483,7 @@ h1.sectionHeader {
                 margin-top: 3.5em;
                 padding: 1.5em;
                 border-radius: 5px;
+                background: #cceaf1 !important;
         }
         
         .header h1 {
@@ -460,7 +538,18 @@ h1.sectionHeader {
         #products a {
                 font-size: 1.75rem;
         }
+        li#phoneNumber {
+                width: calc(100% - 4rem);
+                margin: 1rem;
+                text-align: center;
+                margin-left: 0rem !important;
+            }
+            .phoneNumber a {
+                color: white !important;
+                font-size: 1.65rem !important;
+            }
 } 
+
 
 /* Mobile */
 @media screen and (max-width: 600px) {
