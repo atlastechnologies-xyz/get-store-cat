@@ -1,5 +1,5 @@
 ---
-img: /integrations/financialforce.jpg
+img: /integrations/financialforce-logo.jpg
 title: FinancialForce ERP
 layout: integration
 tags: erp 
