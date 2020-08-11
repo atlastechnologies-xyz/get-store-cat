@@ -566,11 +566,27 @@ span.weCanBuiltIt {
                 text-align: center;
                 margin-left: 0rem !important;
                 
-            }
-            .phoneNumber a {
+        }
+        .phoneNumber a {
                 color: white !important;
                 font-size: 1.65rem !important;
-            }
+        }
+        .navbar-collapse a.page-scroll {
+                text-align: center;
+                font-size: 1.65rem !important;
+                color: white !important;
+        }
+        // div#bs-example-navbar-collapse-1 {
+        //         padding: 0;
+        //         width: 100vw !important;
+        //         left: 0;
+        //         display: block !important;
+        //         position: fixed;
+        //         right: 0;
+        //     }
+        ul.nav.navbar-nav.navbar-right {
+                margin-top: 0 !important;
+        }        
 } 
 
 
