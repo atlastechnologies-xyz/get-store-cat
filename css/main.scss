@@ -396,15 +396,22 @@ li#phoneNumber {
         border: 1px solid #0E186E;
         border-radius: 5px;
         background: #0E186E;
-        margin-top: 0.35rem;
+        margin-top: 0.65rem;
         float: right;
         margin-right: 0.5rem;
         margin-left: 1.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.5rem;
 }
 .phoneNumber a {
         color: white !important;
         font-weight: 500;
         padding: 0 !important;
+}
+.phoneNumber i.fa.fa-phone {
+        margin-right: 0.5rem;
+        font-size: 2.25rem;
+        vertical-align: top;
 }
 
 /* Market 360 */
