@@ -169,7 +169,19 @@ img.storeCatImg {
     .container.row.brandImgs {
         display: none;
     }
-
+    #products .col-sm-6 {
+        padding-bottom: 6rem;
+    }
+    #products .row.container {
+            padding-bottom: 0;
+    }
+    .market360 .col-sm-4 {
+            margin-bottom: 6rem !important;
+    }
+    #searchResults a {
+            max-width: calc(50% - 1rem) !important;
+            min-width: unset !important;
+    }
 }
 
 
