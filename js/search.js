@@ -73,7 +73,7 @@ function displayNoResultsMessage ( searchContainer, searchTerm ) {
     var container = document.getElementById(searchContainer)
     deleteAllSearchResults(container)
     var span = document.createElement('span')
-        span.textContent = "No results for '" + searchTerm + "' "
+        span.textContent = "No results for '" + searchTerm + "'."
         span.className = "loading"
 
     document.getElementById(searchContainer).appendChild(span)

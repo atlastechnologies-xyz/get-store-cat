@@ -328,8 +328,8 @@ section#products {
     }
 #products .row.container {
         margin: auto;
-        // padding-bottom: 10vh;
-        padding-right: 12rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
 }
 
 #products a {
@@ -389,7 +389,7 @@ span.sectionHeader {
 
 
 /* Phone Number */
-    li#phoneNumber {
+li#phoneNumber {
         padding: 1rem;
         display: block;
         right: 0;
@@ -399,39 +399,54 @@ span.sectionHeader {
         margin-top: 0.35rem;
         float: right;
         margin-right: 0.5rem;
-    }
-    .phoneNumber a {
-        color: white;
+        margin-left: 1.5rem;
+}
+.phoneNumber a {
+        color: white !important;
         font-weight: 500;
         padding: 0 !important;
-    }
+}
 
-    /* Market 360 */
-    section.marketThreeSixty {
+/* Market 360 */
+section.marketThreeSixty {
         background: #C8E7FF;
         margin-top: -8rem;
-    }
-    .marketThreeSixty h1 {
+}
+.marketThreeSixty h1 {
         font-size: 2.75rem !important;
         font-weight: 600;
         color: #0E186E;
-    }
-    .marketThreeSixty span {
+}
+.marketThreeSixty span {
         color: #0E186E;
         font-size: 1.5rem;
-    }
-    a.browseButtons {
+}
+a.browseButtons {
         width: fit-content;
         margin: auto;
-    }
-    .marketThreeSixty .row.container.extensionTypes {
+}
+.marketThreeSixty .row.container.extensionTypes {
         padding-bottom: 0;
-    }
-    .row.container.market360 {
+}
+.row.container.market360 {
         padding-bottom: 0;
-    }
+}
+i.wow.bounceIn.fa.fa-phone-square.animated {
+        padding: 2.25rem !important;
+}
     
-    
+.marketThreeSixty img {
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+span.weCanBuiltIt {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}    
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
@@ -535,9 +550,6 @@ span.sectionHeader {
         h1.sectionHeader {
                 margin-left: unset;
         }
-        #products .row.container {
-                padding-right: 1.5rem;
-        }
         #products a {
                 font-size: 1.75rem;
         }
@@ -546,6 +558,7 @@ span.sectionHeader {
                 margin: 1rem;
                 text-align: center;
                 margin-left: 0rem !important;
+                
             }
             .phoneNumber a {
                 color: white !important;
