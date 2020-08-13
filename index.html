@@ -3,6 +3,10 @@ title: Make your web store smart!
 layout: front
 ---
 
+
+<link rel="stylesheet" href="/css/integrations.css" type="text/css">
+
+
 {% include header.html 
     title="We make E-Commerce Easy"
     image="/img/shelves.png"
@@ -10,8 +14,16 @@ layout: front
     cta="Call us Today"
     ctaLink="#contact"
 %}
-{% include call-to-action.html %}
 {% include process.html %}
+
+{% include marketThreeSixty.html 
+    ctaText="More about Extensions"
+    ctaLink="/extensions/"    
+%}
+<br>
+{% include testimonial.html %}
+<br>
+
 <section id="products">
     <div class="row container">
         <div class="col-sm-12">
@@ -31,7 +43,6 @@ layout: front
     </div>
 
 </section>
-{% include testimonial.html %}
 {% include contact.html %}
 {% include footer.html %}
 {% include scripts.html %}
