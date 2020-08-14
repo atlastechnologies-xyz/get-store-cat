@@ -21,7 +21,7 @@ hr.light {
 
 a {
     @include transition-all;
-    color: $theme-primary;
+    color: $theme-dark;
     &:hover,
     &:focus {
         color: darken($theme-primary, 10%);
@@ -351,7 +351,7 @@ body {
 }
 
 footer {
-    background: #0E186E;
+    background: linear-gradient(to right, #97d1ff, #c8e7ff);
     bottom: 0;
     width: 100vw;
 }
@@ -372,7 +372,7 @@ footer span {
     display: block;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #0E186E;
     padding-top: 1em;
 }
 
