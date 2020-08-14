@@ -50,17 +50,19 @@ span.loading {
     display: inline-block;
 }
 a.browseButtons {
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 5em 0.5em 5em;
     background: $theme-dark;
     color: white;
     text-transform: capitalize;
-    border-radius: 20px;
+    letter-spacing: .05em;
+    border-radius: 0.6em;
     font-weight: 600;
     letter-spacing: 0.01em;
     margin-top: 2rem;
     display: block;
     width: fit-content;
     text-align: center;
+    box-shadow: 0 3px 6px 0 #00000029;
 }
 
 .integrationTypes li {
@@ -120,9 +122,9 @@ div#searchResults {
 }
 #searchResults img {
     max-width: 100%;
-    padding: 1em;
+    padding: .25em;
     display: block;
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 #searchResults h1 {
@@ -163,7 +165,7 @@ img.storeCatImg {
 }
 div#integrationsBrowser {
     padding-bottom: 0;
-    background: #daeef4;
+    background: linear-gradient(to right, #97d1ff, #c8e7ff);
     padding-top: 0;
     width: 100vw;
     padding-left: 10%;

@@ -44,9 +44,13 @@ body {
         font-family: 'Libre Franklin', sans-serif;
         color: $theme-dark;
 }
+h1{
+        font-weight: 400;
+}
 h2 {
         // text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 400;
+        font-size: 2.5rem;
 }
 
 header {
@@ -54,8 +58,8 @@ header {
         background-size: cover;
         min-width: 100vw;
         box-shadow: 0 6px 12px #00000029;
-        border-bottom-left-radius: 24px;
-        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
         z-index: 15 !important;
         position: relative;
         margin-bottom: 3rem;
@@ -81,12 +85,13 @@ a.btn {
         background: $theme-dark;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        border-radius: 0.75em;
+        border-radius: 0.6em;
         font-weight: 700;
+        letter-spacing: .05em;
         text-transform: capitalize !important;
         color: white !important;        
-        padding-left: 4em;
-        padding-right: 4em;
+        padding-left: 5em;
+        padding-right: 5em;
         box-shadow: 0 3px 6px 0 #00000029;
 }
 a.btn:hover {
@@ -96,6 +101,7 @@ a.btn:hover {
 }
 .text-center p, .text-center h2 {
         color: $theme-dark;
+        font-weight: 400;
 }
 .header-content p {
         color: $theme-dark !important;
@@ -177,6 +183,7 @@ a.btn.btn-default.btn-xl {
 .onboarding h2 {
         width: fit-content;
         margin: auto;
+        font-weight: 400;
 }
 .onboarding h3 {
         margin-top: 0em;
@@ -278,7 +285,8 @@ img.headshot {
 .testimonial h2.section-heading {
         margin-top: 0.75em;
         font-size: 1.25em;
-        color: #7b7b7b;
+        font-weight: 400;
+        color: #CBFFEF;
         letter-spacing: 0.03em;
 }
 .testimonial p {
@@ -288,7 +296,7 @@ img.headshot {
         letter-spacing: 0.05em
 }
 .testimonial span {
-        color: #949596;
+        color: #CBFFEF;
         letter-spacing: 0.05em;
 }
 
@@ -318,12 +326,12 @@ separator {
 
 /* Products */
 section#products {
-        background: #C8E7FF;
+        background: linear-gradient(to right, #97d1ff, #c8e7ff);
         margin-bottom: 4em;
     }
 #products h2 {
         font-size: 2.25rem;
-        font-weight: 600;
+        font-weight: 400;
     }
 #products .row.container {
         margin: auto;
@@ -358,8 +366,8 @@ h1.sectionHeader {
         margin-bottom: 0;
         text-align: center;
         margin-left: -0.5em;
-        font-size: 4.5rem !important;
-        font-weight: 600;
+        font-size: 3.5rem !important;
+        font-weight: 400;
 }
 
 #contact img.wow.bounceIn.animated {
@@ -424,7 +432,7 @@ li#phoneNumber {
 
 /* Market 360 */
 section.marketThreeSixty {
-        background: #C8E7FF;
+        background: linear-gradient(to right, #97d1ff, #c8e7ff);
         margin-top: -8rem;
 }
 .marketThreeSixty h1 {
@@ -480,7 +488,7 @@ span.weCanBuiltIt {
     header {
         min-height: 50vh;
         display: block;
-        background: #C8E7FF !important;
+        background: linear-gradient(to right, #97d1ff, #c8e7ff) !important;
         
     }
     header {
