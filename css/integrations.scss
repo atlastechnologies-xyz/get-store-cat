@@ -172,6 +172,9 @@ div#integrationsBrowser {
 span.loading {
     padding-bottom: 20rem;
 }
+header {
+    min-height: 60vh !important;
+}
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
@@ -182,7 +185,9 @@ span.loading {
         padding-top: 1rem;
         padding-bottom: 2.5rem;
     }
-    
+    header {
+        min-height: fit-content !important;
+    }
 
 } 
 

@@ -1,18 +1,16 @@
-{% if include.image == '' %}
-    <header>
-{% else %}
-    <header style="background:url('{{ include.image }}');background-size:cover;background-position: center;background-position-y: -14px;">
-{% endif %}
-    <div class="dropShadow">
-
-    </div>
-    <div class="header-content">
-        <div class="header-content-inner">
+<header>
+    <div class="row container">
+        <div class="col-sm-6 inner">
             <span class="header"><h1>{{ include.title }}</h1>
                 <!-- <h1 class="sub">with StoreCat</h1> -->
             </span>
-            <p>{{ include.text }}</p>
+            <!-- <p>{{ include.text }}</p> -->
+            <br>
+            <br>
             <a href="{{ include.ctaLink }}" class="btn btn-primary btn-xl page-scroll">{{ include.cta }}</a>
+        </div>
+        <div class="col-sm-6 outer">
+            <img src="{{ include.image }}">
         </div>
     </div>
 </header>
