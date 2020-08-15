@@ -1,12 +1,4 @@
-<section id="process">
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Get Organized.</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div> -->
+<section id="process" >
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -46,9 +38,23 @@
 </section>
 <script>
 
-    setInterval(moveHighlight, 3000)
+    setInterval(moveHighlightNextOnTimer, 3000)
+    var pause = false;
+    var pauseSlip = false;
+    var lastScrollTop = 0;
 
-    function moveHighlight() {
+    function moveHighlightNextOnTimer ( ) {
+        if (pause == true) {
+            console.log('unpaused')
+            pause = false 
+            return
+        } else {
+            moveHighlightNext()
+        }
+    }
+
+    function moveHighlightNext ( ) {
+
         var boxes = document.getElementsByClassName('pbx');
 
         for ( var i = 0; i < boxes.length; i++ ) {
@@ -56,16 +62,97 @@
             // console.log('i is', i, 'box is', box)
 
             if ( box.className.includes('highlight') ) { 
-                console.log('highlight at ', i)
+                // console.log('highlight at ', i)
                 box.className =  box.className.replace('highlight', '')
 
                 if ( boxes[i + 1] ) {
-                    console.log('boxes i + 1', boxes[i + 1])
+                    // console.log('boxes i + 1', boxes[i + 1])
                     return boxes[i + 1].className += ' highlight'
                 } else {
-                    return boxes[0].className += ' highlight'
+                    if ( pause != true ) {
+                        return boxes[0].className += ' highlight'
+                    }
                 }
             }
         }
     }
+    function moveHighlightBack ( ) {
+        
+        var boxes = document.getElementsByClassName('pbx');
+
+        for ( var i = 0; i < boxes.length; i++ ) {
+            var box = boxes[ i ]
+            // console.log('i is', i, 'box is', box)
+
+            if ( box.className.includes('highlight') ) { 
+                // console.log('highlight at ', i)
+                box.className =  box.className.replace('highlight', '')
+
+                if ( boxes[ i - 1 ] ) {
+                    // console.log('boxes i + 1', boxes[i + 1])
+                    return boxes[ i - 1 ].className += ' highlight'
+                } else {
+                    if ( pause != true ) {
+                        return boxes[ boxes.length - 1 ].className += ' highlight'
+                    }
+                }
+            }
+        }
+    }
+
+    function pauseScroll ( ) {
+        if ( pause != true ) {
+            console.log('pause set')
+            pause = true
+            setTimeout( function ( ) {
+                pause = false
+                console.log('pause unset')
+            }, 3000)
+        }
+
+    }
+
+    function scrollNavProcess (){ // or window.addEventListener("scroll"....
+        pauseScroll()
+        console.log('scroll triggered')
+
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > lastScrollTop){
+            scrollHighlightsDown()
+        } else {
+            scrollHighlightsUp()
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }
+
+    function pauseScrollControl ( ) {
+        if ( pauseSlip != true ) {
+            return setTimeout ( function ( ) {
+                pauseSlip = true;
+            }, 500)
+        } else {
+            return;
+        } 
+    }
+
+    function scrollHighlightsDown ( ) {
+        if ( pauseSlip != true ) {
+            return moveHighlightNext()
+        } else {
+            return
+        }
+    }
+
+    function scrollHighlightsUp ( ) {
+        if ( pauseSlip != true ) {
+            return moveHighlightBack()
+        } else {
+            return
+        }
+    }
+
+    window.addEventListener('scroll', scrollNavProcess)
+
+
+
 </script>

@@ -508,6 +508,7 @@ span.weCanBuiltIt {
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
+
         .navbar-header {
                 background: none !important;
         }
@@ -636,16 +637,39 @@ span.weCanBuiltIt {
                 margin-top: 0 !important;
         } 
 
-    span.icon-bar {
-        color: #17346e !important;
-        background: #17346e !important;
-    }
-    a.navbar-brand.page-scroll {
-        color: #17346e !important;
-    }
-    header {
-        min-height: fit-content !important;
-    }
+        span.icon-bar {
+                color: #17346e !important;
+                background: #17346e !important;
+        }
+        a.navbar-brand.page-scroll {
+                color: #17346e !important;
+        }
+        header {
+                min-height: fit-content !important;
+        }
+
+        /* Process */
+        .process-box img {
+                width: 8.5em;
+                display: none;
+        }          
+        
+        .pbx.highlight img {
+                display: block;
+        }    
+
+        p.text-muted {
+                display: none;
+        }  
+
+        .pbx.highlight p.text-muted {
+                display: block;
+        }
+        
+        .process-box {
+                min-height: fit-content;
+        }
+
 } 
 
 
