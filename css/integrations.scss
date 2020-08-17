@@ -50,18 +50,19 @@ span.loading {
     display: inline-block;
 }
 a.browseButtons {
-    padding: 0.5em 5em 0.5em 5em;
+    padding: 0.5em 8em 0.5em 8em;
     background: $theme-dark;
     color: white;
     text-transform: capitalize;
     letter-spacing: .05em;
     border-radius: 0.6em;
     font-weight: 600;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
     margin-top: 2rem;
     display: block;
     width: fit-content;
     text-align: center;
+    margin-top: 4em;
     box-shadow: 0 3px 6px 0 #00000029;
 }
 

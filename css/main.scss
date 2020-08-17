@@ -272,7 +272,7 @@ section {
         background: #0E186E;
         padding-top: 5em;
         padding-bottom: 3em;
-        margin-top: -2em;
+        margin-top: 0em;
         z-index: 5 !important;
         position: relative;
 }
@@ -327,7 +327,8 @@ separator {
 /* Products */
 section#products {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
-        margin-bottom: 4em;
+        margin-bottom: 2em;
+        box-shadow: 0 6px 12px #00000029;
     }
 #products h2 {
         font-size: 2.25rem;
@@ -434,6 +435,7 @@ li#phoneNumber {
 section.marketThreeSixty {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
         margin-top: -8rem;
+        box-shadow: 0 6px 12px #00000029;
 }
 .marketThreeSixty h1 {
         font-size: 2.75rem !important;
