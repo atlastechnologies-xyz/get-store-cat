@@ -7,6 +7,17 @@
 @import "base";
 
 /* extensions.css */
+.sectionHeader h1{
+    font-size: 2.25em !important; 
+    text-align: center;
+    }
+
+.subtitleText p{
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.75;
+}
+
 .extensionPreview img {
     width: 100%;
     height: auto;
