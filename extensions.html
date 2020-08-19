@@ -6,46 +6,73 @@ stylesheet: extensions.css
 ---
 
 {% include header.html 
-    title="Get the Tools You Need"
-    image="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    title="Get Powered Up to Compete with the Best"
+    image="/img/icons/spaceship-illustration.svg"
     text="From market analysis to report generation, we've got you covered. Automate, and Relax."
     cta="Start Building"
     ctaLink="#contact"
 %}
 
+<div id="section-heavy-lifting" class="container sectionHeader">
+    <h1>Make it easy. Let the computers do the heavy lifting.</h1>
+    <br>
+        <div class="container subtitleText">
+        <p>PowerUps make it easy to <b>track competitor pricing</b> and <b>analyze your workflow</b> with a customized solution. 
+        Our system is easily adapted, so if we don’t yet have something you need, our support team will assist you with <b>custom code.</b></p>   
+        </div>
+</div>
+
 {% include marketThreeSixty.html 
-    ctaText="Get Market 360"
-    ctaLink="#contact"    
+    ctaText="Get Market360"
+    ctaLink="#contact"
 %}
+<style>
+    section.marketThreeSixty {
+        background: white;
+        box-shadow: none;
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+</style>
 
 <div class="container row otherExtensions">
-    <h1 class="sectionHeader">Other Extensions</h1>
     <div class="row container extensionTypes">
-        <div class="col-sm-4">
-            <img src="/img/icons/truck.svg">
-        </div>
-        <div class="col-sm-8">
-            <h2>Where do your products come from?</h2>
-            <br>
-            <span>It's not easy to ensure proper sourcing, but we can help. We make it simple to keep track of your suppliers, and verify environmentally and socially sustainable certifications.</span>            
-
-            <a class="browseButtons" href="#contact">Supplier Transparency Tools</a>
-        </div>
-    </div>
-    <div class="row container extensionTypes">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <img src="/img/icons/boxes.svg">
+            <h3>Automatic Product Generation</h3>
+            <p>When a supplier adds new items to their website, you can automatically generate products from their updated inventory. <br>
+                Set your margins ahead of time and then <b>only one click to import to your webstore.</b> StoreCat does all the math for you.</p>
+                <a class="browseButtonsSecondary" href="#contact">Get Automatic Product Generation</a>
         </div>
-        <div class="col-sm-8">
-            <h2>Say goodbye to endless price sheets</h2>
-            <span>Our unique tools can help you quickly take your product catalogue online, and start taking advantage of your e-commerce potential.</span>            
-
-            <a class="browseButtons" href="#contact">Try Easy Onboarding</a>
+        <div class="col-sm-6">
+            <img src="/img/icons/online-shop.svg">
+            <h3>Purchasing Comparison</h3>
+            <p>Using a default supplier leaves money on the table when you <b>could be buying cheaper</b> elsewhere. Purchasing Comparison shows you each supplier's price and whether it's in stock.<br>
+                Get the <b>best value</b> on products to keep your customers happy and your wallet full.</p>
+                <a class="browseButtonsSecondary" href="#contact">Get Purchasing Comparison</a>
         </div>
     </div>
 </div>
 
-{% include testimonial.html %}
+<div class="container row otherExtensions">
+    <div class="row container extensionTypes">
+        <div class="col-sm-6">
+            <img src="/img/icons/truck.svg">
+            <h3>Where do your products come from?</h3>
+            <p>It's not easy to ensure proper sourcing, StoreCat is here to help. <br>
+                We make it simple to keep track of your suppliers, and verify environmentally and socially sustainable certifications.</p>
+                <a class="browseButtonsSecondary" href="#contact">Get Supplier Transparency Tools</a>
+        </div>
+        <div class="col-sm-6">
+            <img src="/img/icons/reports-color.svg">
+            <h3>Easy Onboarding</h3>
+            <p>Our unique tools can help you quickly take your product catalogue online, and start taking advantage of your e-commerce potential.</p>
+                <a class="browseButtonsSecondary" href="#contact">Try Easy Onboarding</a>
+        </div>
+    </div>
+</div>
+
+{% include getConnected.html %}
 
 {% include contact.html %}
 {% include footer.html %}

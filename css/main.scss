@@ -138,6 +138,11 @@ a.btn.btn-default.btn-xl {
         text-transform: unset !important;
 }
 
+section.gradient {
+        background: linear-gradient(to right, #97d1ff, #c8e7ff);
+        box-shadow: 0 3px 12px #00000029;
+}
+
 /* Call to action */
 .bg-primary {
         background-color: #C8E7FF;
@@ -364,7 +369,7 @@ section#products {
         margin-bottom: 10rem;
 }
 h1.sectionHeader {
-        margin-bottom: 0;
+        margin-bottom: 1em;
         text-align: center;
         margin-left: -0.5em;
         font-size: 3.5rem !important;
@@ -434,7 +439,7 @@ li#phoneNumber {
 /* Market 360 */
 section.marketThreeSixty {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
-        margin-top: -8rem;
+        margin-top: 0.5rem;
         box-shadow: 0 6px 12px #00000029;
 }
 .marketThreeSixty h1 {
@@ -503,6 +508,11 @@ span.weCanBuiltIt {
     a.navbar-brand.page-scroll {
         color: #17346e !important;
     }
+
+    h2.homepage-secondary {
+        text-align: center;
+    }
+
 /* Desktop */
 @media screen and (max-width: 1000px) {
 
