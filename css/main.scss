@@ -138,6 +138,11 @@ a.btn.btn-default.btn-xl {
         text-transform: unset !important;
 }
 
+section.gradient {
+        background: linear-gradient(to right, #97d1ff, #c8e7ff);
+        box-shadow: 0 3px 12px #00000029;
+}
+
 /* Call to action */
 .bg-primary {
         background-color: #C8E7FF;

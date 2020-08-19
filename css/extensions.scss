@@ -17,6 +17,9 @@
     text-align: center;
     line-height: 1.75;
 }
+p.extensionTypes {
+    text-align: center;
+}
 
 .extensionPreview img {
     width: 100%;
@@ -30,6 +33,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.otherExtensions {
+    padding-bottom: 1vh !important;
+}
+
 .extensionPreview h1 {
     font-size: 2.75em !important;
     color: $theme-dark;
@@ -65,7 +73,7 @@ a.browseButtons {
     background: $theme-dark;
     color: white;
     text-transform: capitalize;
-    border-radius: 8px;
+    border-radius: 0.5em;
     font-weight: 600;
     letter-spacing: 0.05em;
     margin-top: 2rem;
@@ -74,6 +82,26 @@ a.browseButtons {
     text-align: center;
 }
 
+a.browseButtonsSecondary {
+    padding: 0.4em 3em 0.4em 3em;
+    background: $theme-primary;
+    color: $theme-dark;
+    border-style: solid; 
+    border-color: $theme-dark;
+    text-transform: capitalize;
+    border-radius: 0.5em;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    margin: auto;
+    margin-top: 2rem;
+    display: block;
+    width: fit-content;
+    text-align: center;
+}
+.otherExtensions .row.container.extensionTypes {
+    padding-bottom: 0;
+}
 .extensionTypes li {
     display: inline-block;
 }
@@ -82,7 +110,10 @@ a.browseButtons {
     padding: 4em;
     text-align: center;
 }
-
+.extensionTypes .col-sm-6 {
+    padding: 4em;
+    text-align: center;
+}
 .extensionTypes h1 {
     font-size: 3em !important;
     text-transform: capitalize;
@@ -192,6 +223,9 @@ img.storeCatImg {
     #searchResults a {
             max-width: calc(50% - 1rem) !important;
             min-width: unset !important;
+    }
+    .extensionTypes .col-sm-6 {
+        padding: 0.75em;
     }
 }
 
