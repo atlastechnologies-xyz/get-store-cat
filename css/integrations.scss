@@ -196,6 +196,9 @@ span.loading {
 header {
     min-height: 60vh !important;
 }
+#searchResults h1.title {
+    display: none;
+}
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
