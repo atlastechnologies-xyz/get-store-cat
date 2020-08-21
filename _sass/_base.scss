@@ -89,12 +89,13 @@ aside {
         > li {
             > a,
             > a:focus {
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-weight: 700;
                 font-size: 13px;
                 color: $theme-secondary;
                 &:hover {
                     color: $theme-dark;
+                    text-decoration: underline;
                 }
             }
             &.active {

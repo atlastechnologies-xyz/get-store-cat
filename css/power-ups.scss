@@ -10,7 +10,12 @@
 .sectionHeader h1{
     font-size: 2.25em !important; 
     text-align: center;
+    padding-bottom: 1em;
     }
+
+.marketThreeSixty h1 {
+    margin-bottom: -1em !important;
+}
 
 .subtitleText p{
     font-size: 1.25em;
@@ -29,13 +34,17 @@ p.extensionTypes {
 }
 
 .container.row {
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
     margin-left: auto;
     margin-right: auto;
 }
 
 .otherExtensions {
     padding-bottom: 1vh !important;
+}
+
+.otherExtensions h3 {
+    font-weight: 600;
 }
 
 .extensionPreview h1 {
@@ -69,7 +78,7 @@ span.loading {
     display: inline-block;
 }
 a.browseButtons {
-    padding: 0.5em 4em 0.5em 4em;
+    padding: 0.5em 5em 0.5em 5em;
     background: $theme-dark;
     color: white;
     text-transform: capitalize;
@@ -98,6 +107,7 @@ a.browseButtonsSecondary {
     display: block;
     width: fit-content;
     text-align: center;
+    box-shadow: 0 3px 6px 0 #00000029;
 }
 .otherExtensions .row.container.extensionTypes {
     padding-bottom: 0;
@@ -122,6 +132,9 @@ header.extensionHeader {
     max-height: 40vh !important;
     overflow: hidden;
     min-height: 70vh !important;
+}
+div#section-heavy-lifting {
+    padding-top: 2em;
 }
 
 
@@ -215,20 +228,34 @@ img.storeCatImg {
         padding-bottom: 6rem;
     }
     #products .row.container {
-            padding-bottom: 0;
+        padding-bottom: 0;
     }
+
     .market360 .col-sm-4 {
-            margin-bottom: 6rem !important;
+        margin-bottom: 6rem !important;
+        padding: 2em;
+        padding-top: 0em;
+        padding-bottom: 0em;
     }
+
+    .marketThreeSixty h1 {
+        margin-bottom: 1em !important;
+    }
+
     #searchResults a {
-            max-width: calc(50% - 1rem) !important;
-            min-width: unset !important;
+        max-width: calc(50% - 1rem) !important;
+        min-width: unset !important;
     }
     .extensionTypes .col-sm-6 {
         padding: 0.75em;
+        margin-bottom: 5em;
     }
 }
 
+    a.browseButtons {
+        margin-top: 1em;
+        margin-bottom: 6em;
+    }
 
 @media screen and (max-width: 330px) {
 	

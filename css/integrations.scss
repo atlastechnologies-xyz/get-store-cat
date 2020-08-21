@@ -15,13 +15,20 @@
 }
 
 .container.row {
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
     margin-left: auto;
     margin-right: auto;
 }
-.integrationPreview h1 {
-    font-size: 2.75em !important;
+h1 {
+    font-size: 2.5em !important;
     color: $theme-dark;
+    text-align: center;
+    margin-top: 1em;
+}
+.header h1{
+    font-size: 2.75em !important;
+    text-align: left !important;
+    margin-top: 2em;
 }
 
 .integrationPreview span {
@@ -36,9 +43,14 @@
 }
 input#searchInput {
     padding: 0.25em;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    width: 100%;
+    width: 65%;
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    border-width: 1px;
+    border-radius: .25em;
 }
 span.loading {
     width: 100%;
@@ -50,22 +62,39 @@ span.loading {
     display: inline-block;
 }
 a.browseButtons {
-    padding: 0.5em 6em 0.5em 6em;
+    padding: 0.5em 4em 0.5em 4em;
     background: $theme-dark;
     color: white;
     text-transform: capitalize;
-    letter-spacing: .05em;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
     font-weight: 600;
     letter-spacing: 0.03em;
-    margin-top: 2rem;
     display: block;
     width: fit-content;
     text-align: center;
     margin-top: 4em;
     box-shadow: 0 3px 6px 0 #00000029;
 }
-
+a.browseButtonsSecondary {
+    padding: 0.5em 4em 0.5em 4em;
+    background: $theme-primary;
+    color: $theme-dark;
+    border-style: solid; 
+    border-color: $theme-dark;
+    text-transform: capitalize;
+    border-radius: 0.5em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 4em;
+    box-shadow: 0 3px 6px 0 #00000029;
+}
+a.left-align {
+    margin-left: 0 !important;
+}
 .integrationTypes li {
     display: inline-block;
     padding-top: 1.5rem;
@@ -76,22 +105,12 @@ a.browseButtons {
     text-align: center;
 }
 
-.integrationTypes h1 {
-    font-size: 3em !important;
-    text-transform: capitalize;
-}
 div#integrationsBrowser {
     padding-top: 10vh;
 }
-#integrationsBrowser h1 {
-    font-size: 4.5rem !important;
-}
 #integrationsBrowser span {
     font-size: 1.65rem;
-}
-.integrationPreview h1 {
-    font-size: 3.5rem !important;
-    margin-top: 0;
+    font-weight: 400;
 }
 
 .integrationPreview {
@@ -112,7 +131,7 @@ div#searchResults {
 }
 
 #searchResults a {
-    max-width: calc(25% - 2.5em);
+    max-width: calc(20% - 4em);
     display: inline-block;
     overflow: hidden;
     min-height: fit-content;
@@ -122,23 +141,22 @@ div#searchResults {
     border: none;
 }
 #searchResults img {
-    max-width: 100%;
     padding: .25em;
-    display: block;
+    display: inline-block;
     width: 75%;
     height: auto;
 }
-#searchResults h1 {
+#searchResults h3 {
     display: none !important;
 }
 
 .integrationTypes ul {
     padding-left: 0;
-    padding-top: 2rem;
+    padding-top: 1em;
     margin-bottom: 0;
 }
 .brandPreview img {
-    max-width: 14rem;
+    max-width: 10rem;
     padding-right: 1em;
 }
 .container.row.brandImgs {
@@ -166,17 +184,20 @@ img.storeCatImg {
 }
 div#integrationsBrowser {
     padding-bottom: 0;
-    background: linear-gradient(to right, #97d1ff, #c8e7ff);
     padding-top: 0;
     width: 100vw;
     padding-left: 10%;
     padding-right: 10%;
+    text-align: center;
 }
 span.loading {
     padding-bottom: 20rem;
 }
 header {
     min-height: 60vh !important;
+}
+#searchResults h1.title {
+    display: none;
 }
 
 /* Tablet */
@@ -209,7 +230,17 @@ header {
             max-width: calc(50% - 1rem) !important;
             min-width: unset !important;
     }
-
+    img.center-align-mobile {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    a.center-align-mobile {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    input#searchInput {
+        width: 100%;
+    }
 }
 
 

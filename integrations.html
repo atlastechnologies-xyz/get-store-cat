@@ -1,7 +1,7 @@
 ---
 title: Make your web store smart!
 layout: front
-permalink: /products//integrations/
+permalink: /integrations/
 ---
 
 <link rel="stylesheet" href="/css/integrations.css" type="text/css">
@@ -9,19 +9,22 @@ permalink: /products//integrations/
 
 {% include header.html 
     title="Being Connected is Being Ahead"
-    image="https://images.unsplash.com/photo-1477288309209-a14ce05a641e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"
+    image="/img/icons/integration-world-connect.svg"
     text="Our job is to make it easy to set up your infrastructure. StoreCat can help you establish your brand and connect with all of your systems."
     cta="Check Compatibility"
     ctaLink="#integrationsBrowser"
 %}
 <div class="row container integrationTypes">
-    <div class="col-sm-4">
+    <h1>Get Connected with Integrations</h1> <br>
+    <div class="col-sm-3 center-align-mobile">
         <img src="/img/icons/online-shop.svg">
     </div>
-    <div class="col-sm-8" id="ecommerce">
-        <h1>When your web store isn't up to date, you’re losing money</h1>
-        <span>Your web store may be the core of your E-Commerce offering, but it’s only part of your operation. StoreCat integrates with your e-commerce platform (like Shopify) and updates your site automatically, so you can focus on helping customers and growing your business. Keep customers happy and your wallet full. <br><br>When your suppliers update their prices, StoreCat’s Web Store integration converts each one to your desired product price, and then automatically updates your Web Store.
-            </span>
+    <div class="col-sm-9" id="ecommerce">
+        <h2>When your web store isn't up to date, you’re losing money.</h2>
+        <p>StoreCat integrates with your e-commerce platform (like Shopify) and updates your site automatically, so you can focus on helping customers and growing your business.
+            <br><br>
+            <b>Keep customers happy and your wallet full.</b>
+        </p>
         <ul>
         {% for integration in site.integrations %}
             {% if integration.tags contains "webstore" %}
@@ -33,33 +36,21 @@ permalink: /products//integrations/
             {% endif %}
         {% endfor %}
         </ul>
-        <a class="browseButtons" href="#integrationsBrowser">Browse E-Commerce Management Solutions</a>
+        <a class="browseButtons left-align center-align-mobile" href="#integrationsBrowser">See E-Commerce Solutions</a>
     </div>
 </div>
 <div class="row container integrationTypes">
-    <div class="col-sm-4">
-        <img src="/img/icons/truck.svg">
-    </div>
-    <div class="col-sm-8">
-        <h1>Say goodbye to endless price sheets</h1>
-        <span>StoreCat’s team of engineers is here to help you automate without your own technical team. StoreCat connects to each of your suppliers and automatically pulls new item information from your suppliers whenever it's available. <br>This information includes pricing, new items, and product details. If there’s something else you need, StoreCat will be sure to grab that too.</span>            
-
-        <a class="browseButtons" href="#contact">Learn More about Connecting With Suppliers</a>
-    </div>
-</div>
-<div class="row container integrationTypes">
-    <div class="col-sm-4">
+    <div class="col-sm-3 center-align-mobile">
         <img src="/img/icons/wizard.svg">
     </div>
-    <div class="col-sm-8">
-        <h1>Modernize without Reinventing</h1>
-        <span>
-            Most management systems are not E-Commerce oriented - StoreCat was made for the web. We can help you bridge your sales team to your supply chain, and give you the room you need to store all of your information in one place. 
-            <br>
-            Keep your product catalogue organized and up-to-date, with all the numbers you need in one place. With automatic updates, your team will always be able to buy at the best price, and easily purchase and manage your inventory.
-            <br>
-            Connect StoreCat to your current Enterprise Resource Planning (ERP) tool (like [popular ERP tool]) and StoreCat will sync all product information across the platform, integrating the necessary information from your webstore and suppliers.
-        </span>            
+    <div class="col-sm-9">
+        <h2>Modernize without Reinventing</h2>
+        <p>
+            StoreCat bridges your sales team and supply chain, and gives you the room you need to store all of your information in one place.
+            Keep your product catalogue organized and up-to-date. With automatic updates, your team can always <b>sell at the best price.</b>
+            <br><br>
+            Connect StoreCat to your current Enterprise Resource Planning (ERP) tool, like FinancialForce, and StoreCat will <b>sync all product information</b> across your platforms.
+        </p>            
         <ul>
             {% for integration in site.integrations %}
             {% if integration.tags contains "erp" %}
@@ -71,13 +62,28 @@ permalink: /products//integrations/
                 {% endif %}
             {% endfor %}
         </ul>
-        <a class="browseButtons" href="#integrationsBrowser">Browse Systems and ERP Solutions</a>
+        <a class="browseButtonsSecondary left-align center-align-mobile" href="#integrationsBrowser">See ERP Solutions</a>
+    </div>
+</div>
+<div class="row container integrationTypes">
+    <div class="col-sm-3 center-align-mobile">
+        <img src="/img/icons/truck.svg">
+    </div>
+    <div class="col-sm-9">
+        <h2>Say goodbye to endless price sheets</h2>
+        <p>StoreCat automates your process by connecting to your suppliers and <b>automatically pulling new item information whenever it's available,</b> including pricing, new items, and product details.
+            <br><br>
+            If there’s something else you need, StoreCat will be sure to grab that too.
+        </p>            
+
+        <a class="browseButtonsSecondary left-align center-align-mobile" href="#contact">Connect With Suppliers</a>
     </div>
 </div>
 
 
 {% include allIntegrations.html %}
 
+{% include powerUpsInsert.html %}
 {% include contact.html %}
 {% include footer.html %}
 {% include scripts.html %}

@@ -143,6 +143,10 @@ section.gradient {
         box-shadow: 0 3px 12px #00000029;
 }
 
+section#getConnected {
+        margin-top: 3em;
+}
+
 /* Call to action */
 .bg-primary {
         background-color: #C8E7FF;
@@ -305,6 +309,10 @@ img.headshot {
         letter-spacing: 0.05em;
 }
 
+section#success {
+        margin-top: 2em;
+}
+
 /* seperator */
 separator {
         display: block;
@@ -408,7 +416,9 @@ section#process {
         padding-bottom: 1rem;
     }
     
-    
+.text-center {
+        text-align: center;
+}
 
 /* Phone Number */
 li#phoneNumber {
@@ -446,6 +456,7 @@ section.marketThreeSixty {
         font-size: 2.75rem !important;
         font-weight: 600;
         color: #0E186E;
+        margin-bottom: 1em;
 }
 .marketThreeSixty span {
         color: #0E186E;
@@ -474,8 +485,8 @@ span.weCanBuiltIt {
     width: 100%;
     text-align: center;
     display: block;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 5em;
+    margin-top: 2.5em;
 }    
 .outer img {
         max-width: 100%;
@@ -673,10 +684,13 @@ span.weCanBuiltIt {
         .market360 .col-sm-4 {
                 margin-bottom: 6rem !important;
         }
+        .marketThreeSixty h1 {
+                margin-bottom: 1em;
+        }
         #searchResults a {
                 max-width: calc(50% - 1rem) !important;
                 min-width: unset !important;
-            }
+                }
 }
 
 
