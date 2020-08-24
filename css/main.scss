@@ -142,9 +142,26 @@ section.gradient {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
         box-shadow: 0 3px 12px #00000029;
 }
-
 section#getConnected {
         margin-top: 3em;
+}
+.gradient-green {
+        background: linear-gradient(to right, #77FFD6, #CBFFEF);
+        color: $theme-dark;
+}
+#supplierGetAPI {
+        font-weight: 600 !important;
+        text-align: left;
+        padding-top: 1.5em;
+        padding-bottom: 0em;
+        margin-bottom: 2em;
+        letter-spacing: .03em;
+}
+#supplierGetAPI img {
+        max-width: 5em !important;
+}
+.right-align {
+        text-align: right !important;
 }
 
 /* Call to action */
