@@ -91,6 +91,12 @@ a.btn {
         color: white !important;        
         box-shadow: 0 3px 6px 0 #00000029;
 }
+a.btn-white {
+        background: white;
+        border: solid;
+        border-color: $theme-dark;
+        color: $theme-dark !important;
+}
 a.btn:hover {
         background: $theme-dark;
         text-decoration: underline;
@@ -146,6 +152,16 @@ section#getConnected {
 .gradient-green {
         background: linear-gradient(to right, #77FFD6, #CBFFEF);
         color: $theme-dark;
+}
+section#extraTime{
+        padding: 1em;
+        margin-top: 2em;
+        margin-bottom: -1em;
+}
+
+h3 {
+        font-size: 1.5em;
+        font-weight: 600;
 }
 #factoid {
         font-weight: 600 !important;
@@ -298,41 +314,37 @@ section {
 }
 
 /* Testimonials */
-.bg-primary.testimonial {
-        background: #0E186E;
-        padding-top: 5em;
+.testimonial {
+        background: white;
+        padding-top: 0em;
         padding-bottom: 3em;
-        margin-top: 0em;
+        margin: -2em auto;
         z-index: 5 !important;
         position: relative;
 }
 img.headshot {
         border-radius: 50%;
-        background: white;
+        background: #97D1FF;
         max-height: 12em;
         float: right;
 }
 .testimonial h2.section-heading {
         margin-top: 0.75em;
+        margin-bottom: 0.3em;
         font-size: 1.25em;
-        font-weight: 400;
-        color: #CBFFEF;
+        font-weight: 600;
+        color: #0E186E;
         letter-spacing: 0.03em;
 }
 .testimonial p {
         margin-top: 10%;;
-        color: white;
+        color: #0E186E;
         margin-bottom: 0;
         letter-spacing: 0.05em
 }
 .testimonial span {
-        color: #CBFFEF;
+        color: #0E186E;
         letter-spacing: 0.05em;
-}
-
-section#success {
-        margin-top: 1em;
-
 }
 
 /* seperator */
@@ -411,9 +423,6 @@ h1.sectionHeader {
         padding: 1em;
 }
 
-section#success {
-        padding-top: 1rem;
-}
 img.headshot {
         margin-top: 6rem;
 }
@@ -472,7 +481,7 @@ li#phoneNumber {
 section.marketThreeSixty {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
         margin-top: 0.5rem;
-        box-shadow: 0 6px 12px #00000029;
+        box-shadow: 0 3px 12px #00000029;
 }
 .marketThreeSixty h1 {
         font-size: 2.75rem !important;
