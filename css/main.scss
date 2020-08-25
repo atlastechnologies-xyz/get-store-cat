@@ -83,15 +83,12 @@ header {
 }
 a.btn {
         background: $theme-dark;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding: 0.5em 5em;
         border-radius: 0.6em;
         font-weight: 700;
         letter-spacing: .05em;
         text-transform: capitalize !important;
         color: white !important;        
-        padding-left: 5em;
-        padding-right: 5em;
         box-shadow: 0 3px 6px 0 #00000029;
 }
 a.btn:hover {
@@ -706,7 +703,7 @@ span.weCanBuiltIt {
         #products .row.container {
                 padding-bottom: 0;
         }
-        .market360 .col-sm-4 {
+        .market360 .col-sm-4 { 
                 margin-bottom: 6rem !important;
         }
         .marketThreeSixty h1 {
@@ -716,6 +713,10 @@ span.weCanBuiltIt {
                 max-width: calc(50% - 1rem) !important;
                 min-width: unset !important;
                 }
+        a.btn-mobile {
+                padding: 0.5em 3em;
+                margin: 0 auto;
+        }
 }
 
 
