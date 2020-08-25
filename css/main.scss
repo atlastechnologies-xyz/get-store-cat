@@ -140,16 +140,17 @@ a.btn.btn-default.btn-xl {
 
 section.gradient {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
+        padding: 3.5em;
         box-shadow: 0 3px 12px #00000029;
 }
 section#getConnected {
-        margin-top: 3em;
+        margin-top: 1em;
 }
 .gradient-green {
         background: linear-gradient(to right, #77FFD6, #CBFFEF);
         color: $theme-dark;
 }
-#supplierGetAPI {
+#factoid {
         font-weight: 600 !important;
         text-align: left;
         padding-top: 1.5em;
@@ -157,12 +158,12 @@ section#getConnected {
         margin-bottom: 2em;
         letter-spacing: .03em;
 }
-#supplierGetAPI img {
+#factoid img {
         max-width: 5em !important;
         margin-top: -1rem;
         padding-bottom: 1rem;
 }
-#supplierGetAPI p {
+#factoid p {
         padding-top: 0.25rem;
 }
 
@@ -333,7 +334,8 @@ img.headshot {
 }
 
 section#success {
-        margin-top: 2em;
+        margin-top: 1em;
+
 }
 
 /* seperator */
