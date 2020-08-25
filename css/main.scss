@@ -102,6 +102,12 @@ a.btn:hover {
         text-decoration: underline;
         color: white !important;
 }
+.tiles:hover {
+        text-decoration: underline;
+        text-decoration-color: $theme-dark;
+        background: $theme-secondary;
+}
+
 .text-center p, .text-center h2 {
         color: $theme-dark;
         font-weight: 400;
@@ -423,6 +429,15 @@ h1.sectionHeader {
         padding: 1em;
 }
 
+.tiles {
+        border: solid;
+        border-width: 2px;
+        border-color: #97D1FF;
+        border-radius: 1em;
+        max-width: 17em;
+        box-shadow: 0 3px 6px 0 #00000029;
+    }
+
 img.headshot {
         margin-top: 6rem;
 }
@@ -725,6 +740,9 @@ span.weCanBuiltIt {
         a.btn-mobile {
                 padding: 0.5em 3em;
                 margin: 0 auto;
+        }
+        .tiles {
+                margin: 0 auto 2em;
         }
 }
 
