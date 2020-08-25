@@ -200,8 +200,13 @@ header {
     display: none;
 }
 
+
+
 /* Tablet */
 @media screen and (max-width: 800px ) {
+    .header-content.integration {
+        padding-top: 1rem;
+    }
     #searchResults a {
         min-width: calc(100% - 2em) !important;
         min-height: fit-content !important;

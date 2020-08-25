@@ -12,10 +12,6 @@ header {
     min-height: fit-content !important;
     margin-bottom: 3em;
 }
-.header-content-inner {
-    padding: 1em;
-}
-
 .container.row {
     margin: auto;
 }
@@ -47,7 +43,16 @@ span.startNowButton {
 .header-content-inner {
     padding: 1em;
     overflow: hidden;
+    margin-top: 5rem;
 }
+.docPreview h1, .docPreview span {
+    color: #0E186E !important;
+}
+.docPreview h1:hover, .docPreview span:hover {
+    text-decoration: none;
+}
+
+
 
 /* Mobile */
 @media screen and (max-width: 600px) {
@@ -66,6 +71,9 @@ span.startNowButton {
         padding-bottom: 4em;
     }
 
+    .header-content-inner {
+        margin-top: 0;
+    }
 
 }
 
