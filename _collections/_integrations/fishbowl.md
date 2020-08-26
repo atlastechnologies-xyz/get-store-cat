@@ -7,7 +7,7 @@ fee: 100
 startup: 400
 connectedService: FishBowl
 connectedServiceUrl: https://www.FishBowlInventory.com/
-previewText: "FishBowl is one of the top ERP solutions for the Salesforce Cloud. Don't worry about keeping your web store up to date - let us take care of the heavy lifting automatically."
+previewText: "FishBowl is one of the oldest ERP solutions, but we make integrating easy. Don't worry about keeping your web store up to date - let us take care of the heavy lifting automatically."
 permalink: /integrations/fishbowl/
 ---
 
