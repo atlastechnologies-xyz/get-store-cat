@@ -39,6 +39,18 @@ permalink: /integrations/
         <a class="browseButtons left-align center-align-mobile" href="#integrationsBrowser">See E-Commerce Solutions</a>
     </div>
 </div>
+
+{% include factoid.html 
+    text="Your employees have more important things to do than manual data entry."
+    image="/img/icons/lightbulb-white-fill.svg"
+%}
+<style>
+    section#factoid {
+        margin-top: -4em;
+        margin-bottom: 5em;
+    }
+ </style>
+
 <div class="row container integrationTypes">
     <div class="col-sm-3 center-align-mobile">
         <img src="/img/icons/wizard.svg">
@@ -84,6 +96,12 @@ permalink: /integrations/
 {% include allIntegrations.html %}
 
 {% include powerUpsInsert.html %}
+<br><br><br><br>
+{% include factoid.html 
+    text="How much would you save by eliminating writeoff orders?"
+    image="/img/icons/question-mark-white.svg"
+%}
+
 {% include contact.html %}
 {% include footer.html %}
 {% include scripts.html %}

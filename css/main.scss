@@ -83,22 +83,31 @@ header {
 }
 a.btn {
         background: $theme-dark;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding: 0.5em 5em;
         border-radius: 0.6em;
         font-weight: 700;
         letter-spacing: .05em;
         text-transform: capitalize !important;
         color: white !important;        
-        padding-left: 5em;
-        padding-right: 5em;
         box-shadow: 0 3px 6px 0 #00000029;
+}
+a.btn-white {
+        background: white;
+        border: solid;
+        border-color: $theme-dark;
+        color: $theme-dark !important;
 }
 a.btn:hover {
         background: $theme-dark;
         text-decoration: underline;
         color: white !important;
 }
+.tiles:hover {
+        text-decoration: underline;
+        text-decoration-color: $theme-dark;
+        background: $theme-secondary;
+}
+
 .text-center p, .text-center h2 {
         color: $theme-dark;
         font-weight: 400;
@@ -140,16 +149,27 @@ a.btn.btn-default.btn-xl {
 
 section.gradient {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
+        padding: 3.5em;
         box-shadow: 0 3px 12px #00000029;
 }
 section#getConnected {
-        margin-top: 3em;
+        margin-top: 1em;
 }
 .gradient-green {
         background: linear-gradient(to right, #77FFD6, #CBFFEF);
         color: $theme-dark;
 }
-#supplierGetAPI {
+section#extraTime{
+        padding: 1em;
+        margin-top: 2em;
+        margin-bottom: -1em;
+}
+
+h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+}
+#factoid {
         font-weight: 600 !important;
         text-align: left;
         padding-top: 1.5em;
@@ -157,12 +177,12 @@ section#getConnected {
         margin-bottom: 2em;
         letter-spacing: .03em;
 }
-#supplierGetAPI img {
+#factoid img {
         max-width: 5em !important;
         margin-top: -1rem;
         padding-bottom: 1rem;
 }
-#supplierGetAPI p {
+#factoid p {
         padding-top: 0.25rem;
 }
 
@@ -300,40 +320,37 @@ section {
 }
 
 /* Testimonials */
-.bg-primary.testimonial {
-        background: #0E186E;
-        padding-top: 5em;
+.testimonial {
+        background: white;
+        padding-top: 0em;
         padding-bottom: 3em;
-        margin-top: 0em;
+        margin: -2em auto;
         z-index: 5 !important;
         position: relative;
 }
 img.headshot {
         border-radius: 50%;
-        background: white;
+        background: #97D1FF;
         max-height: 12em;
         float: right;
 }
 .testimonial h2.section-heading {
         margin-top: 0.75em;
+        margin-bottom: 0.3em;
         font-size: 1.25em;
-        font-weight: 400;
-        color: #CBFFEF;
+        font-weight: 600;
+        color: #0E186E;
         letter-spacing: 0.03em;
 }
 .testimonial p {
         margin-top: 10%;;
-        color: white;
+        color: #0E186E;
         margin-bottom: 0;
         letter-spacing: 0.05em
 }
 .testimonial span {
-        color: #CBFFEF;
+        color: #0E186E;
         letter-spacing: 0.05em;
-}
-
-section#success {
-        margin-top: 2em;
 }
 
 /* seperator */
@@ -412,9 +429,15 @@ h1.sectionHeader {
         padding: 1em;
 }
 
-section#success {
-        padding-top: 1rem;
-}
+.tiles {
+        border: solid;
+        border-width: 2px;
+        border-color: #97D1FF;
+        border-radius: 1em;
+        max-width: 17em;
+        box-shadow: 0 3px 6px 0 #00000029;
+    }
+
 img.headshot {
         margin-top: 6rem;
 }
@@ -473,7 +496,7 @@ li#phoneNumber {
 section.marketThreeSixty {
         background: linear-gradient(to right, #97d1ff, #c8e7ff);
         margin-top: 0.5rem;
-        box-shadow: 0 6px 12px #00000029;
+        box-shadow: 0 3px 12px #00000029;
 }
 .marketThreeSixty h1 {
         font-size: 2.75rem !important;
@@ -708,7 +731,7 @@ span.weCanBuiltIt {
         #products .row.container {
                 padding-bottom: 0;
         }
-        .market360 .col-sm-4 {
+        .market360 .col-sm-4 { 
                 margin-bottom: 6rem !important;
         }
         .marketThreeSixty h1 {
@@ -718,6 +741,13 @@ span.weCanBuiltIt {
                 max-width: calc(50% - 1rem) !important;
                 min-width: unset !important;
                 }
+        a.btn-mobile {
+                padding: 0.5em 3em;
+                margin: 0 auto;
+        }
+        .tiles {
+                margin: 0 auto 2em;
+        }
 }
 
 

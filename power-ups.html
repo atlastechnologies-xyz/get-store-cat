@@ -35,6 +35,11 @@ stylesheet: power-ups.css
     }
 </style>
 
+{% include factoid.html 
+    text="When your web store isn't up to date, you lose money with writeoff orders and potential customers to the competition."
+    image="/img/icons/lightbulb-white-fill.svg"
+%}
+
 <div class="container row otherExtensions">
     <div class="row container extensionTypes">
         <div class="col-sm-6">
@@ -42,14 +47,14 @@ stylesheet: power-ups.css
             <h3>Automatic Product Generation</h3>
             <p>When a supplier adds new items to their website, you can automatically generate products from their updated inventory. <br>
                 Set your margins ahead of time and then <b>only one click to import to your webstore.</b> StoreCat does all the math for you.</p>
-                <a class="browseButtonsSecondary" href="#contact">Get Automatic Product Generation</a>
+                <a class="browseButtonsSecondary page-scroll" href="#contact">Get Automatic Product Generation</a>
         </div>
         <div class="col-sm-6">
             <img src="/img/icons/online-shop.svg">
             <h3>Purchasing Comparison</h3>
             <p>Using a default supplier leaves money on the table when you <b>could be buying cheaper</b> elsewhere. Purchasing Comparison shows you each supplier's price and whether it's in stock.<br>
                 Get the <b>best value</b> on products to keep your customers happy and your wallet full.</p>
-                <a class="browseButtonsSecondary" href="#contact">Get Purchasing Comparison</a>
+                <a class="browseButtonsSecondary page-scroll" href="#contact">Get Purchasing Comparison</a>
         </div>
     </div>
 </div>
@@ -61,19 +66,23 @@ stylesheet: power-ups.css
             <h3>Where do your products come from?</h3>
             <p>It's not easy to ensure proper sourcing, StoreCat is here to help. <br>
                 We make it simple to keep track of your suppliers, and verify environmentally and socially sustainable certifications.</p>
-                <a class="browseButtonsSecondary" href="#contact">Get Supplier Transparency Tools</a>
+                <a class="browseButtonsSecondary page-scroll" href="#contact">Get Supplier Transparency Tools</a>
         </div>
         <div class="col-sm-6">
             <img src="/img/icons/reports-color.svg">
             <h3>Easy Onboarding</h3>
             <p>Our unique tools can help you quickly take your product catalogue online, and start taking advantage of your e-commerce potential.</p>
-                <a class="browseButtonsSecondary" href="#contact">Try Easy Onboarding</a>
+                <a class="browseButtonsSecondary page-scroll" href="#contact">Try Easy Onboarding</a>
         </div>
     </div>
 </div>
 
 {% include getConnected.html %}
-
+<br>
+{% include factoid.html 
+    text="What could you accomplish if you always knew your competitions' pricing?"
+    image="/img/icons/question-mark-white.svg"
+%}
 {% include contact.html %}
 {% include footer.html %}
 {% include scripts.html %}
