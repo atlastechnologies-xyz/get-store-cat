@@ -587,10 +587,12 @@ span.weCanBuiltIt {
     h2.homepage-secondary {
         text-align: center;
     }
-.gallery img {
-    display: none;
-}
-
+	.gallery img {
+	    display: none;
+	}
+	#factoid a.btn.oneline {
+	    margin-top: 1rem;
+	}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
