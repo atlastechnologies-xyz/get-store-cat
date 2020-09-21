@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="product-detail-multi" transform="translate(-6313 -2435)">
+    <rect id="Rectangle_411" data-name="Rectangle 411" width="200" height="200" transform="translate(6313 2435)" fill="none"/>
+    <g id="Group_422" data-name="Group 422">
+      <g id="Group_420" data-name="Group 420">
+        <g id="white" transform="translate(327 260)">
+          <path id="Path_4158" data-name="Path 4158" d="M6066.748,2318.462l-2.932,20.648h44.61l-3.441-20.648Z" fill="#fff"/>
+          <rect id="Rectangle_463" data-name="Rectangle 463" width="133" height="89" rx="2" transform="translate(6020 2221)" fill="#fff"/>
+        </g>
+        <path id="green" d="M1012,107H876a8.009,8.009,0,0,1-8-8V8a8.009,8.009,0,0,1,8-8h136a8.009,8.009,0,0,1,8,8V99A8.009,8.009,0,0,1,1012,107ZM878.574,11.092V95.909h130.852V11.092Z" transform="translate(5469 2472)" fill="#77ffd6"/>
+        <path id="blue" d="M36,30H0V0H12V12H24V0H36V30Z" transform="translate(6362 2507)" fill="#97d1ff"/>
+      </g>
+      <g id="Group_421" data-name="Group 421">
+        <g id="Group_410" data-name="Group 410" transform="translate(327 260)">
+          <g id="Group_24" data-name="Group 24" transform="translate(6008 2209)">
+            <g id="Group_23" data-name="Group 23">
+              <path id="Path_35" data-name="Path 35" d="M146.387,40.081H9.613A9.623,9.623,0,0,0,0,49.693v92.812a9.623,9.623,0,0,0,9.613,9.612H55.872L54,167.086H46.249a2.285,2.285,0,0,0,0,4.57h63.5a2.285,2.285,0,0,0,0-4.57H102l-1.871-14.969h46.259A9.623,9.623,0,0,0,156,142.505V49.693A9.623,9.623,0,0,0,146.387,40.081ZM58.607,167.086l1.871-14.969h8.41l.825,3.3a8.542,8.542,0,0,0,16.573,0l.825-3.3h8.41l1.871,14.969ZM73.6,152.117h8.8l-.548,2.191a3.971,3.971,0,0,1-7.706,0Zm77.83-9.612h0a5.048,5.048,0,0,1-5.042,5.042H9.613a5.048,5.048,0,0,1-5.042-5.042V49.693a5.048,5.048,0,0,1,5.042-5.042H146.387a5.048,5.048,0,0,1,5.042,5.042Z" transform="translate(0 -40.081)" fill="#0e186e"/>
+            </g>
+          </g>
+          <g id="Group_26" data-name="Group 26" transform="translate(6017.826 2218.827)">
+            <g id="Group_25" data-name="Group 25">
+              <path id="Path_36" data-name="Path 36" d="M152.281,72.146H34.362a2.3,2.3,0,0,0-2.3,2.3v88.439a2.3,2.3,0,0,0,2.3,2.3h4.913a2.3,2.3,0,0,0,0-4.6H36.661V76.743h115.62a2.3,2.3,0,0,0,0-4.6Z" transform="translate(-32.064 -72.146)" fill="#0e186e"/>
+            </g>
+          </g>
+          <g id="Group_28" data-name="Group 28" transform="translate(6031.659 2218.827)">
+            <g id="Group_27" data-name="Group 27">
+              <path id="Path_37" data-name="Path 37" d="M200.379,72.146h-4.913a2.3,2.3,0,0,0,0,4.6h2.615v83.842H82.46a2.3,2.3,0,1,0,0,4.6H200.378a2.3,2.3,0,0,0,2.3-2.3V74.444A2.3,2.3,0,0,0,200.379,72.146Z" transform="translate(-80.162 -72.146)" fill="#0e186e"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_419" data-name="Group 419">
+          <g id="Group_404" data-name="Group 404" transform="translate(6280 2433)">
+            <path id="Path_4157" data-name="Path 4157" d="M61.054,15H25.238A2.239,2.239,0,0,0,23,17.238V48.577a2.239,2.239,0,0,0,2.238,2.238H61.054a2.239,2.239,0,0,0,2.238-2.238V17.238A2.239,2.239,0,0,0,61.054,15ZM45.385,19.477v7.571H40.908V19.477ZM58.816,46.339H27.477V19.477h8.954l-.062,9.872a2.238,2.238,0,0,0,1.061,1.9c.66.408,5.759.359,5.759.359s4.89.049,5.55-.359a2.239,2.239,0,0,0,1.061-1.9l.063-9.872h8.954Z" transform="translate(56.812 56.114)" fill="#0e186e"/>
+          </g>
+          <g id="product_detail_lines" data-name="product detail lines">
+            <line id="Line_1" data-name="Line 1" x2="36" transform="translate(6427.034 2504.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_4" data-name="Line 4" x2="36" transform="translate(6427.034 2516.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_6" data-name="Line 6" x2="36" transform="translate(6427.034 2528.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_8" data-name="Line 8" x2="36" transform="translate(6427.034 2540.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_2" data-name="Line 2" x2="3" transform="translate(6413.5 2504.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_3" data-name="Line 3" x2="3" transform="translate(6413.5 2516.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_5" data-name="Line 5" x2="3" transform="translate(6413.5 2528.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+            <line id="Line_7" data-name="Line 7" x2="3" transform="translate(6413.5 2540.5)" fill="none" stroke="#0e186e" stroke-linecap="round" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
