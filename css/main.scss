@@ -630,7 +630,8 @@ span.sectionHeaderSubtitle {
                 background: #0000007d;
         }
         .navbar-brand img {
-                display: none;
+                display: inline-block;
+                margin-left: -0.35rem;
         }
         button.navbar-toggle.collapsed {
                 border: none;
@@ -665,7 +666,8 @@ span.sectionHeaderSubtitle {
         }
         
         .header h1 {
-                font-size: 2.25em !important;
+                // font-size: 2.25em !important;
+                font-size: 3.45rem !important;
         }
         strong {
                 color: #0E186E;
@@ -710,6 +712,8 @@ span.sectionHeaderSubtitle {
         }
         h1.sectionHeader {
                 margin-left: unset;
+                font-size: 2.5rem !important;
+                line-height: 3.5rem;
         }
         #products a {
                 font-size: 1.75rem;
@@ -720,6 +724,10 @@ span.sectionHeaderSubtitle {
                 text-align: center;
                 margin-left: 0rem !important;
                 
+        }
+        #factoid a.btn.oneline {
+                margin-top: 0rem;
+                margin-bottom: 2rem;
         }
         .phoneNumber a {
                 color: white !important;
@@ -751,6 +759,12 @@ span.sectionHeaderSubtitle {
     }
     header {
         min-height: fit-content !important;
+    }
+    .outer img {
+        display: none;
+    }
+    a.btn.btn-primary.btn-xl.page-scroll {
+        margin-left: 0;
     }
 } 
 
