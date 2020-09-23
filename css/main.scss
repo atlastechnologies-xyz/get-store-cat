@@ -554,7 +554,9 @@ span.weCanBuiltIt {
 }    
 .outer img {
         max-width: 100%;
-    }
+        margin-top: 5.75rem;
+        margin-left: 7rem;
+}
 
 /* New Header */
 .header-content {
@@ -587,13 +589,21 @@ span.weCanBuiltIt {
     h2.homepage-secondary {
         text-align: center;
     }
-	.gallery img {
-	    display: none;
-	}
-	#factoid a.btn.oneline {
-	    margin-top: 1rem;
-	}
-
+.gallery img {
+        display: none;
+}
+#factoid a.btn.oneline {
+        margin-top: 1rem;
+}
+span.sectionHeaderSubtitle {
+        margin-top: -2rem;
+        display: block;
+        margin-bottom: 4rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.75rem;
+        }
+        
 /* Desktop */
 @media screen and (max-width: 1000px) {
 
