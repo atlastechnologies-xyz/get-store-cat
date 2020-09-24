@@ -40,17 +40,31 @@
 @import "base";
 
 body {
-        // font-family: "nunito";
         font-family: 'Libre Franklin', sans-serif;
         color: $theme-dark;
 }
 h1{
         font-weight: 400;
+        font-size: 3.75rem !important;
 }
 h2 {
-        // text-transform: uppercase;
         font-weight: 400;
         font-size: 2.5rem;
+}
+
+h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+        line-height: 1.25em;
+}
+
+h4 {
+        color: $theme-dark;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        line-height: 1.5em;
+
 }
 
 header {
@@ -119,13 +133,13 @@ a.btn:hover {
         font-weight: 500;
 }
 .header h1 {
-        // font-family: nunito;
         font-family: 'Libre Franklin', sans-serif;
         color: $theme-dark;
-        // text-transform: capitalize !important;
-        font-size: 2.75em !important;
         line-height: 1.25em;
+        text-align: left;
+        margin-top: 2em;
 }
+
 .header-content h1.sub {
         font-size: 2.25em !important;
 }
@@ -163,19 +177,6 @@ section#extraTime{
         padding: 1em;
         margin-top: 2em;
         margin-bottom: -1em;
-}
-
-h3 {
-        font-size: 1.5em;
-        font-weight: 600;
-}
-h4 {
-        color: $theme-dark;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 0.02em;
-        line-height: 1.5em;
-
 }
 
 #factoid {
@@ -437,15 +438,20 @@ section#products {
 h1.sectionHeader {
         margin-bottom: 1em;
         text-align: center;
-        margin-left: -0.5em;
-        font-size: 3.5rem !important;
+        font-size: 3rem !important;
         font-weight: 400;
+        line-height: 3.5rem;
+
 }
 
 #contact img.wow.bounceIn.animated {
         width: 7em;
         padding: 1em;
 }
+
+section#contact {
+        padding: 0 0 12rem;
+    }
 
 .tiles {
         border: solid;
@@ -516,12 +522,7 @@ section.marketThreeSixty {
         margin-top: 0.5rem;
         box-shadow: 0 3px 12px #00000029;
 }
-.marketThreeSixty h1 {
-        font-size: 2.75rem !important;
-        font-weight: 600;
-        color: #0E186E;
-        margin-bottom: 1em;
-}
+
 .marketThreeSixty span {
         color: #0E186E;
         font-size: 1.5rem;
@@ -535,6 +536,7 @@ a.browseButtons {
 }
 .row.container.market360 {
         padding-bottom: 0;
+        margin-top: -5rem;
 }
 i.wow.bounceIn.fa.fa-phone-square.animated {
         padding: 2.25rem !important;
@@ -596,12 +598,12 @@ span.weCanBuiltIt {
         margin-top: 1rem;
 }
 span.sectionHeaderSubtitle {
-        margin-top: -2rem;
+        margin-top: -1.5rem;
         display: block;
         margin-bottom: 4rem;
         width: 100%;
         text-align: center;
-        font-size: 1.75rem;
+        font-size: 1.85rem;
         }
         
 /* Desktop */
@@ -710,11 +712,7 @@ span.sectionHeaderSubtitle {
                 text-align: center;
                 display: inline-block;
         }
-        h1.sectionHeader {
-                margin-left: unset;
-                font-size: 2.5rem !important;
-                line-height: 3.5rem;
-        }
+        
         #products a {
                 font-size: 1.75rem;
         }
@@ -772,6 +770,15 @@ span.sectionHeaderSubtitle {
 /* Mobile */
 @media screen and (max-width: 600px) {
        
+        h1 {
+                font-size: 3rem;
+        }
+        .mobileCenter {
+                margin-left:auto;
+                margin-right: auto;
+                text-align: center;
+        }
+
         #products .col-sm-6 {
                 padding-bottom: 6rem;
         }
