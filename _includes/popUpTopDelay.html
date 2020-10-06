@@ -1,0 +1,40 @@
+<section class="factoid gradient-green popUp hidden" onload="hidePopUp()">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 col-sm-offset-2">
+                <p>{{ include.text }}</p>
+            </div>
+            <div class="col-sm-2">
+                <a class="btn mobileCenter {{ include.oneLine }}" href="{{ include.link }}" target="_blank"> {{ include.ctaText }}</a>
+            </div>
+        </div>
+    </div>
+    <span onclick="hidePopUp()">✕</span>
+</section>
+
+<script>
+function hidePopUp () {
+    var popUps = document.getElementsByClassName('popUp')
+    for ( p of popUps ) {
+        if ( !p.className.includes('hidden') ) {
+            p.className += " hidden"
+        }  
+    }
+}
+function showPopUp ( ) {
+    console.log('showing popup')
+    var popUps = document.getElementsByClassName('popUp')
+    for ( p of popUps ) {
+        console.log('about to show', p)
+        if ( p.className.includes('hidden') ) {
+            p.className = p.className.replace(" hidden","")
+        }  
+    }
+}
+
+window.onload = function ( ) {
+    console.log('setting showPopup!')
+    setTimeout(showPopUp, 2500)
+}
+
+</script>

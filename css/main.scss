@@ -179,7 +179,7 @@ section#extraTime{
         margin-bottom: -1em;
 }
 
-#factoid {
+.factoid {
         font-weight: 600 !important;
         text-align: left;
         padding-top: 1.5em;
@@ -187,16 +187,16 @@ section#extraTime{
         margin-bottom: 2em;
         letter-spacing: .03em;
 }
-#factoid img {
+.factoid img {
         max-width: 5em !important;
         margin-top: -1rem;
         padding-bottom: 1rem;
 }
-#factoid p {
+.factoid p {
         padding-top: 0.25rem;
 }
 
-#factoid p.oneline {
+.factoid p.oneline {
         padding-top: 1.5rem;
 }
 header .inner p {
@@ -594,7 +594,7 @@ span.weCanBuiltIt {
 .gallery img {
         display: none;
 }
-#factoid a.btn.oneline {
+.factoid a.btn.oneline {
         margin-top: 1rem;
 }
 span.sectionHeaderSubtitle {
@@ -605,7 +605,34 @@ span.sectionHeaderSubtitle {
         text-align: center;
         font-size: 1.85rem;
         }
-        
+   
+/* Popup Shit */
+.hidden {
+        display : none !important;
+}
+.factoid.popUp {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        opacity: 85%;
+        font-size: 1.05rem;
+        border-radius: 2rem;
+        margin: 1rem;
+        max-width: 80%;
+        min-width: unset !important;
+        left: 11rem;
+}
+.factoid.popUp span {
+        float: right;
+        right: 2.5rem;
+        position: absolute;
+        top: 1.5rem;
+        font-size: 4rem;
+        color: #badffd;
+        opacity: 1;
+        z-index: 10000;
+}
+
 /* Desktop */
 @media screen and (max-width: 1000px) {
 
@@ -723,7 +750,7 @@ span.sectionHeaderSubtitle {
                 margin-left: 0rem !important;
                 
         }
-        #factoid a.btn.oneline {
+        .factoid a.btn.oneline {
                 margin-top: 0rem;
                 margin-bottom: 2rem;
         }

@@ -56,11 +56,11 @@
             // console.log('i is', i, 'box is', box)
 
             if ( box.className.includes('highlight') ) { 
-                console.log('highlight at ', i)
+                // console.log('highlight at ', i)
                 box.className =  box.className.replace('highlight', '')
 
                 if ( boxes[i + 1] ) {
-                    console.log('boxes i + 1', boxes[i + 1])
+                    // console.log('boxes i + 1', boxes[i + 1])
                     return boxes[i + 1].className += ' highlight'
                 } else {
                     return boxes[0].className += ' highlight'
