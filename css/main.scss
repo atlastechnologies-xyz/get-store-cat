@@ -632,6 +632,21 @@ span.sectionHeaderSubtitle {
         opacity: 1;
         z-index: 10000;
 }
+.reportCard .row {
+        text-align: center;
+        display: block;
+        position: relative;
+}
+.reportCard a {
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-left: calc(50% - 15.25rem);
+}
+.reportCard .tiles:hover {
+        background: white;
+        border: #bbf8ea 2px solid;
+}
 
 /* Desktop */
 @media screen and (max-width: 1000px) {
@@ -640,6 +655,13 @@ span.sectionHeaderSubtitle {
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
+        .reportCard a {
+                text-align: center;
+                display: block;
+                position: relative;
+                margin-left: 0;
+            }
+        
         a.btn.btn-primary.btn-xl.page-scroll {
                 margin-left: -1.25rem;
             }
