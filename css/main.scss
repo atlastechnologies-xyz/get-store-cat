@@ -610,19 +610,28 @@ span.sectionHeaderSubtitle {
 .hidden {
         display : none !important;
 }
-.factoid.popUp {
+.popUp .container {
+        padding: 0;
+        max-width: 800px;
+        min-width: fit-content;
+        border-radius: 2.5rem;
+    }
+.popUp {
         position: fixed;
-        top: 0;
         z-index: 9999;
-        opacity: 85%;
-        font-size: 1.05rem;
-        border-radius: 2rem;
-        margin: 1rem;
-        max-width: 80%;
+        max-width: 100%;
         min-width: unset !important;
-        left: 11rem;
-}
-.factoid.popUp span {
+        display: block;
+        padding: 0;
+        top: 1rem;
+    }
+.popUp .col-sm-5.col-sm-offset-2 {
+        padding-top: 2rem;
+    }
+.popUp .col-sm-2 {
+        padding-top: 4rem;
+    }
+.popUp span {
         float: right;
         right: 2.5rem;
         position: absolute;
@@ -655,6 +664,33 @@ span.sectionHeaderSubtitle {
 
 /* Tablet */
 @media screen and (max-width: 800px ) {
+        section.factoid.gradient-green.popUp {
+                top: 25vh;
+                opacity: 100%;
+            }
+        .gradient-green.container {
+                padding-left: 3rem;
+            }
+        .popUp .col-sm-5.col-sm-offset-2 {
+                padding-top: 0rem;
+            }
+              
+        .gradient-green.container {
+                padding: 2rem;
+        }
+        
+        .popUp span {
+                top: unset;
+                bottom: 1.5rem;
+            }
+            
+        section.popUp {
+                top: 65vh;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                max-width: calc(100% - 2rem);
+            }
+
         .reportCard a {
                 text-align: center;
                 display: block;
